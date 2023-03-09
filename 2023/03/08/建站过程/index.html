@@ -268,8 +268,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-08 21:48:22</span>
-            <span class="mobile">2023-03-08 21:48</span>
+            <span class="pc">2023-03-08 23:11:42</span>
+            <span class="mobile">2023-03-08 23:11</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -280,12 +280,12 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-file-word"></i>&nbsp;<span>152 字</span>
+            <i class="fa-regular fa-file-word"></i>&nbsp;<span>506 字</span>
         </span>
     
     
         <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>1 分钟</span>
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 分钟</span>
         </span>
     
     
@@ -298,17 +298,33 @@
 
             <div class="article-content markdown-body">
                 <h2 id="方式选择"><a href="#方式选择" class="headerlink" title="方式选择"></a>方式选择</h2><p>这里可以参考公众号：程序员鱼皮 的文章 <a class="link"   target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/S-OLy1fDyQXyTrKSWtG7YA" >不敢想，做个博客竟如此简单！ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>当然也可以选择在 CSDN、博客园、知乎等平台方面记录，但这个不是我个人的首选</p>
-<p>最后我选择就做个静态站点进成，放到Github Pages上, 方便又省事😎</p>
-<p>(有机会也是想尝试搞个建站程序放在服务器上的)</p>
-<p>到GitHub Pages网站看看，有个简单的使用流程</p>
+<p>当然也可以选择在 CSDN、博客园、知乎等平台方面记录，但这个可能我个人不是太偏好</p>
+<p>最后我选择就做个静态站点，放到Github Pages上, 算是比较方便的吧</p>
+<h2 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h2><p>到GitHub Pages网站看看，有个简单的使用流程</p>
 <p><a class="link"   target="_blank" rel="noopener" href="https://pages.github.com/" >GitHub Pages | Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live. <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
-<p>总结一下<br><img  
+<h3 id="step-1"><a href="#step-1" class="headerlink" title="step 1"></a>step 1</h3><p>在自己的GitHub上新建一个库，名字是 <username>.github.io 这里的 username 就是自己账号的用户名</p>
+<img  
                      lazyload
                      src="/images/loading.svg"
                      data-src="1747.png"
                       width="75%" height="75%"
-                ></p>
+                >
+
+<h3 id="step-2"><a href="#step-2" class="headerlink" title="step 2"></a>step 2</h3><p>网页上是的操作</p>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># 将上面的repository clone到本地</span><br><span class="line">git clone https://github.com/username/username.github.io</span><br><span class="line"></span><br><span class="line">cd username.github.io</span><br><span class="line"></span><br><span class="line"># 写入一个index.html文件，内容是输出 Hello World!</span><br><span class="line">echo &quot;Hello World&quot; &gt; index.html</span><br><span class="line"></span><br><span class="line"># 将内容确认并推送到repository</span><br><span class="line">git add --all</span><br><span class="line"></span><br><span class="line">git commit -m &quot;Initial commit&quot;</span><br><span class="line"></span><br><span class="line">git push -u origin main</span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+<p>其实呢，在repository页面里直接建一个index.html,内容是Hello World! 是一样的效果</p>
+<p>以上步骤之后，打开 <a class="link"   target="_blank" rel="noopener" href="https://username.github.io/" >https://username.github.io <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 正常的话是能看到Hello World! 的</p>
+<p>这里只是算一个测试性质的吧，成型后的操作都交给Helo就行</p>
+<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>GitHub Pages是支持 Jekyll、Hugo、Hexo编译静态资源的</p>
+<p>Jekyll需要 Ruby 开发环境，官方不建议在 Windows 下运行，但想要用也是有办法的，官方文档有写。<br>Hugo 是用 Go 语言写的，支持多个平台。<br>Hexo 需要安装 nodejs</p>
+<p>我这里因为用过 nodejs 所以就选择了hexo ( Hugo 官网主题页面似乎没有 Hexo 多)</p>
+<p>Hexo 中文官网 <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>可以用npm直接安装</p>
+<p><code>npm install hexo-cli -g</code></p>
+<h3 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h3><div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 初始化一个目录</span><br><span class="line">hexo init blog</span><br><span class="line"></span><br><span class="line">cd blog</span><br><span class="line"></span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line"># 运行该实例</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure></div>
+
+<p>之后打开 <a class="link"   target="_blank" rel="noopener" href="http://localhost:4000/" >http://localhost:4000 <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> 接可以看到默认的一个介绍页面</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>详细的配置参数可以在官网的文档里找到，可以在 _config.yml 中修改大部分的配置。</p>
 
             </div>
 
@@ -350,7 +366,7 @@
     <div class="post-toc">
         <div class="toc-title">此页目录</div>
         <div class="page-title">建站过程</div>
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E5%BC%8F%E9%80%89%E6%8B%A9"><span class="nav-text">方式选择</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E5%BC%8F%E9%80%89%E6%8B%A9"><span class="nav-text">方式选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#GitHub-Pages"><span class="nav-text">GitHub Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#step-1"><span class="nav-text">step 1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#step-2"><span class="nav-text">step 2</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BB%BA%E7%AB%99"><span class="nav-text">建站</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE"><span class="nav-text">配置</span></a></li></ol></li></ol>
 
     </div>
 </div>
