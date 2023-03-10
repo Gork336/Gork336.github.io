@@ -61,6 +61,7 @@
   margin-top: 10px;
   margin-bottom: 1rem;
   position: relative;
+  box-shadow: var(--redefine-box-shadow-flat);
 }
 .highlight-container[data-rel] figcaption {
   font-weight: bold;
