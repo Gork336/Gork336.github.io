@@ -28,7 +28,7 @@
 <meta property="og:description" content="SQL注入常用函数">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-06-28T14:56:24.000Z">
-<meta property="article:modified_time" content="2023-06-28T15:01:44.969Z">
+<meta property="article:modified_time" content="2023-06-29T09:27:57.577Z">
 <meta property="article:author" content="Gork">
 <meta name="twitter:card" content="summary">
 
@@ -139,7 +139,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#left"><span class="nav-text">left()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#substr"><span class="nav-text">substr()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mid"><span class="nav-text">mid()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ASCII"><span class="nav-text">ASCII()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ord"><span class="nav-text">ord()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#updatexml"><span class="nav-text">updatexml()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#exp"><span class="nav-text">exp()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LIKE"><span class="nav-text">LIKE()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#group-concat"><span class="nav-text">group_concat()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#concat"><span class="nav-text">concat()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#count"><span class="nav-text">count()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#length%EF%BC%88%EF%BC%89"><span class="nav-text">length（）</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#left"><span class="nav-text">left()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#substr"><span class="nav-text">substr()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mid"><span class="nav-text">mid()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ASCII"><span class="nav-text">ASCII()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ord"><span class="nav-text">ord()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#updatexml"><span class="nav-text">updatexml()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#extractvalue"><span class="nav-text">extractvalue()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#exp"><span class="nav-text">exp()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#LIKE"><span class="nav-text">LIKE()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#group-concat"><span class="nav-text">group_concat()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#concat"><span class="nav-text">concat()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#count"><span class="nav-text">count()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#length%EF%BC%88%EF%BC%89"><span class="nav-text">length（）</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -218,9 +218,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2023-06-28 22:56:24 / 修改时间：23:01:44" itemprop="dateCreated datePublished" datetime="2023-06-28T22:56:24+08:00">2023-06-28</time>
+      <time title="创建时间：2023-06-28 22:56:24" itemprop="dateCreated datePublished" datetime="2023-06-28T22:56:24+08:00">2023-06-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-06-29 17:27:57" itemprop="dateModified" datetime="2023-06-29T17:27:57+08:00">2023-06-29</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -253,6 +259,14 @@
 <h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
 <h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
 <h4 id="updatexml"><a href="#updatexml" class="headerlink" title="updatexml()"></a>updatexml()</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">updatexml(XML_document, XPath_string, new_value);</span><br><span class="line">第一个参数：XML_document 是 String 格式，为 XML 文档对象的名称，文中为 Doc</span><br><span class="line">第二个参数：XPath_string (Xpath 格式的字符串)</span><br><span class="line">第三个参数：new_value，String 格式，替换查找到的符合条件的数据</span><br></pre></td></tr></table></figure>
+
+<p>用例</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select database()),0x7e),1) --+  </span></span><br></pre></td></tr></table></figure>
+
+<h4 id="extractvalue"><a href="#extractvalue" class="headerlink" title="extractvalue()"></a>extractvalue()</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extractvalue(<span class="string">&#x27;XML_document&#x27;</span>,<span class="string">&#x27;Xpath_string&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>用例</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id<span class="operator">=</span><span class="number">-1</span><span class="string">&#x27;and extractvalue(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select database())))--+</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="exp"><a href="#exp" class="headerlink" title="exp()"></a>exp()</h4><p>以 e 为底数的指数函数，可能会存在溢出</p>
 <h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
