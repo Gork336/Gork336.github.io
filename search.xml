@@ -1,52 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>wallpaper</title>
-    <url>/2023/06/28/wallpaper/</url>
-    <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
-<p><img src="/images/RE4GpUM.jpg" alt="Bing 2023/6/28"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>万能密码</title>
-    <url>/2023/06/28/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</url>
-    <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&quot;or 1=1--</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>建站相关</title>
-    <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
-    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
-<p><a href="https://theme-next.js.org/">Next</a></p>
-<p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>注入类型</title>
-    <url>/2023/06/28/%E6%B3%A8%E5%85%A5%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<p>常见的SQL注入类型</p>
-<span id="more"></span>
-<h3 id="数字型和字符型"><a href="#数字型和字符型" class="headerlink" title="数字型和字符型"></a>数字型和字符型</h3><p>数字型：“1+1&#x3D;2”<br>字符型：“2”+“2”&#x3D;“22”</p>
-<h3 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h3><p>利用数据库报错判断是否存在注入点<br>常用函数</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="built_in">count</span>(),rand(),<span class="keyword">group</span> <span class="keyword">by</span></span><br></pre></td></tr></table></figure>
-
-<p>常用特殊字符</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&#x27; \ ; %00 ) ( # &quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="盲注"><a href="#盲注" class="headerlink" title="盲注"></a>盲注</h3><h4 id="1-时间型盲注"><a href="#1-时间型盲注" class="headerlink" title="1. 时间型盲注"></a>1. 时间型盲注</h4><p>利用 if sleep() 查看是否存在延时，分析是否存在注入</p>
-<h4 id="2-布尔型盲注"><a href="#2-布尔型盲注" class="headerlink" title="2. 布尔型盲注"></a>2. 布尔型盲注</h4><p>通过返回状态猜解，二分法与 ASCII 值比较，判断每一位字符</p>
-<h3 id="堆叠注入"><a href="#堆叠注入" class="headerlink" title="堆叠注入"></a>堆叠注入</h3><p>执行多条SQL语句<br>Oracle 不支持堆叠查询注入</p>
-<h3 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h3><p>主要是利用 UNION</p>
-<h3 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h3><h3 id="Cookie-注入"><a href="#Cookie-注入" class="headerlink" title="Cookie 注入"></a>Cookie 注入</h3><h3 id="编码注入"><a href="#编码注入" class="headerlink" title="编码注入"></a>编码注入</h3><h3 id="XFF-注入攻击"><a href="#XFF-注入攻击" class="headerlink" title="XFF 注入攻击"></a>XFF 注入攻击</h3><p>X-Forware-For</p>
-]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
-  </entry>
-  <entry>
     <title>常用函数</title>
     <url>/2023/06/28/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>SQL注入常用函数</p>
@@ -78,6 +32,22 @@
       <categories>
         <category>SQL注入</category>
       </categories>
+  </entry>
+  <entry>
+    <title>万能密码</title>
+    <url>/2023/06/28/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&quot;or 1=1--</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>wallpaper</title>
+    <url>/2023/06/28/wallpaper/</url>
+    <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
+<p><img src="/images/RE4GpUM.jpg" alt="Bing 2023/6/28"></p>
+]]></content>
   </entry>
   <entry>
     <title>常见解</title>
@@ -119,13 +89,12 @@
       </categories>
   </entry>
   <entry>
-    <title>过滤应对</title>
-    <url>/2023/06/28/%E8%BF%87%E6%BB%A4%E5%BA%94%E5%AF%B9/</url>
-    <content><![CDATA[<h4 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h4><p>空格 &#x3D;&gt; &#x2F;**&#x2F;<br>等号 &#x3D;&gt; like()<br>“#”  &#x3D;&gt; %23</p>
+    <title>建站相关</title>
+    <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
+    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
+<p><a href="https://theme-next.js.org/">Next</a></p>
+<p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
 ]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
   </entry>
   <entry>
     <title>补充</title>
@@ -143,6 +112,37 @@
 <h4 id="PostgreSQL"><a href="#PostgreSQL" class="headerlink" title="PostgreSQL"></a>PostgreSQL</h4><p>端口号：5432或5433<br>注释符号：–，&#x2F;**&#x2F;</p>
 <h4 id="DB2"><a href="#DB2" class="headerlink" title="DB2"></a>DB2</h4><p>端口号：5000</p>
 <h4 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h4><p>端口号：27017</p>
+]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>过滤应对</title>
+    <url>/2023/06/28/%E8%BF%87%E6%BB%A4%E5%BA%94%E5%AF%B9/</url>
+    <content><![CDATA[<h4 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h4><p>空格 &#x3D;&gt; &#x2F;**&#x2F;<br>等号 &#x3D;&gt; like()<br>“#”  &#x3D;&gt; %23</p>
+]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>注入类型</title>
+    <url>/2023/06/28/%E6%B3%A8%E5%85%A5%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<p>常见的SQL注入类型</p>
+<span id="more"></span>
+<h3 id="数字型和字符型"><a href="#数字型和字符型" class="headerlink" title="数字型和字符型"></a>数字型和字符型</h3><p>数字型：“1+1&#x3D;2”<br>字符型：“2”+“2”&#x3D;“22”</p>
+<h3 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h3><p>利用数据库报错判断是否存在注入点<br>常用函数</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="built_in">count</span>(),rand(),<span class="keyword">group</span> <span class="keyword">by</span></span><br></pre></td></tr></table></figure>
+
+<p>常用特殊字符</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&#x27; \ ; %00 ) ( # &quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="盲注"><a href="#盲注" class="headerlink" title="盲注"></a>盲注</h3><h4 id="1-时间型盲注"><a href="#1-时间型盲注" class="headerlink" title="1. 时间型盲注"></a>1. 时间型盲注</h4><p>利用 if sleep() 查看是否存在延时，分析是否存在注入</p>
+<h4 id="2-布尔型盲注"><a href="#2-布尔型盲注" class="headerlink" title="2. 布尔型盲注"></a>2. 布尔型盲注</h4><p>通过返回状态猜解，二分法与 ASCII 值比较，判断每一位字符</p>
+<h3 id="堆叠注入"><a href="#堆叠注入" class="headerlink" title="堆叠注入"></a>堆叠注入</h3><p>执行多条SQL语句<br>Oracle 不支持堆叠查询注入</p>
+<h3 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h3><p>主要是利用 UNION</p>
+<h3 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h3><h3 id="Cookie-注入"><a href="#Cookie-注入" class="headerlink" title="Cookie 注入"></a>Cookie 注入</h3><h3 id="编码注入"><a href="#编码注入" class="headerlink" title="编码注入"></a>编码注入</h3><h3 id="XFF-注入攻击"><a href="#XFF-注入攻击" class="headerlink" title="XFF 注入攻击"></a>XFF 注入攻击</h3><p>X-Forware-For</p>
 ]]></content>
       <categories>
         <category>SQL注入</category>
