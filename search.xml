@@ -1,19 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>配置</title>
+    <title>wallpaper</title>
+    <url>/2023/06/28/wallpaper/</url>
+    <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
+<p><img src="/images/RE4GpUM.jpg" alt="Bing 2023/6/28"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>注入类型</title>
+    <url>/2023/06/28/%E6%B3%A8%E5%85%A5%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<p>常见的SQL注入类型</p>
+<span id="more"></span>
+<h3 id="数字型和字符型"><a href="#数字型和字符型" class="headerlink" title="数字型和字符型"></a>数字型和字符型</h3><p>数字型：“1+1&#x3D;2”<br>字符型：“2”+“2”&#x3D;“22”</p>
+<h3 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h3><p>利用数据库报错判断是否存在注入点<br>常用函数</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="built_in">count</span>(),rand(),<span class="keyword">group</span> <span class="keyword">by</span></span><br></pre></td></tr></table></figure>
+
+<p>常用特殊字符</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&#x27; \ ; %00 ) ( # &quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="盲注"><a href="#盲注" class="headerlink" title="盲注"></a>盲注</h3><h4 id="1-时间型盲注"><a href="#1-时间型盲注" class="headerlink" title="1. 时间型盲注"></a>1. 时间型盲注</h4><p>利用 if sleep() 查看是否存在延时，分析是否存在注入</p>
+<h4 id="2-布尔型盲注"><a href="#2-布尔型盲注" class="headerlink" title="2. 布尔型盲注"></a>2. 布尔型盲注</h4><p>通过返回状态猜解，二分法与 ASCII 值比较，判断每一位字符</p>
+<h3 id="堆叠注入"><a href="#堆叠注入" class="headerlink" title="堆叠注入"></a>堆叠注入</h3><p>执行多条SQL语句<br>Oracle 不支持堆叠查询注入</p>
+<h3 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h3><p>主要是利用 UNION</p>
+<h3 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h3><h3 id="Cookie-注入"><a href="#Cookie-注入" class="headerlink" title="Cookie 注入"></a>Cookie 注入</h3><h3 id="编码注入"><a href="#编码注入" class="headerlink" title="编码注入"></a>编码注入</h3><h3 id="XFF-注入攻击"><a href="#XFF-注入攻击" class="headerlink" title="XFF 注入攻击"></a>XFF 注入攻击</h3><p>X-Forware-For</p>
+]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>万能密码</title>
+    <url>/2023/06/28/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&quot;or 1=1--</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>常用函数</title>
+    <url>/2023/06/28/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>SQL注入常用函数</p>
+<span id="more"></span>
+<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回SQL。</p>
+<h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>substr()、substring()功能相同，均为截取字符串</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length（可选） 指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
+
+<h4 id="mid"><a href="#mid" class="headerlink" title="mid()"></a>mid()</h4><p>mid 函数用于从文本字段中提取字符</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, kength)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
+
+<h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
+<h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
+<h4 id="updatexml"><a href="#updatexml" class="headerlink" title="updatexml()"></a>updatexml()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">updatexml(XML_document, XPath_string, new_value);</span><br><span class="line">第一个参数：XML_document 是 String 格式，为 XML 文档对象的名称，文中为 Doc</span><br><span class="line">第二个参数：XPath_string (Xpath 格式的字符串)</span><br><span class="line">第三个参数：new_value，String 格式，替换查找到的符合条件的数据</span><br></pre></td></tr></table></figure>
+
+<h4 id="exp"><a href="#exp" class="headerlink" title="exp()"></a>exp()</h4><p>以 e 为底数的指数函数，可能会存在溢出</p>
+<h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
+<h4 id="group-concat"><a href="#group-concat" class="headerlink" title="group_concat()"></a>group_concat()</h4><p>将 group by 产生的同一个分组中的值连接起来，返回一个字符串结果</p>
+<h4 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h4><p>将多个字符串连接成一个字符串</p>
+<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length（）"><a href="#length（）" class="headerlink" title="length（）"></a>length（）</h4>]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>过滤应对</title>
+    <url>/2023/06/28/%E8%BF%87%E6%BB%A4%E5%BA%94%E5%AF%B9/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>建站相关</title>
     <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
     <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
 <p><a href="https://theme-next.js.org/">Next</a></p>
 <p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>wallpaper</title>
-    <url>/2023/06/28/wallpaper/</url>
-    <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
-<span id="more"></span>
-<p><img src="/images/RE4GpUM.jpg" alt="Bing 2023/6/28"></p>
 ]]></content>
   </entry>
 </search>
