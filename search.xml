@@ -56,21 +56,12 @@
       </categories>
   </entry>
   <entry>
-    <title>支持的协议和封装协议</title>
-    <url>/2023/06/30/%E6%94%AF%E6%8C%81%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%92%8C%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE/</url>
-    <content><![CDATA[<p>file:&#x2F;&#x2F; — 访问本地文件系统<br>http:&#x2F;&#x2F; — 访问 HTTP(s) 网址<br>ftp:&#x2F;&#x2F; — 访问 FTP(s) URLs<br>php:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）<br>zlib:&#x2F;&#x2F; — 压缩流<br>data:&#x2F;&#x2F; — 数据（RFC 2397）<br>glob:&#x2F;&#x2F; — 查找匹配的文件路径模式<br>phar:&#x2F;&#x2F; — PHP 归档<br>ssh2:&#x2F;&#x2F; — 安全外壳协议 2<br>rar:&#x2F;&#x2F; — RAR<br>ogg:&#x2F;&#x2F; — 音频流<br>expect:&#x2F;&#x2F; — 处理交互式的流</p>
-<p><a href="https://www.php.net/manual/zh/wrappers.php">官网文档</a></p>
-<span id="more"></span>
-<h3 id="file-x2F-x2F"><a href="#file-x2F-x2F" class="headerlink" title="file&#x2F;&#x2F;"></a>file&#x2F;&#x2F;</h3><p>用法<br>file:&#x2F;&#x2F;&#x2F;path&#x2F;to&#x2F;file.ext</p>
-<h3 id="http-x2F-x2F"><a href="#http-x2F-x2F" class="headerlink" title="http:&#x2F;&#x2F;"></a>http:&#x2F;&#x2F;</h3><p>用法<br><a href="http://example.com/">http://example.com</a></p>
-<h3 id="ftp-x2F-x2F"><a href="#ftp-x2F-x2F" class="headerlink" title="ftp:&#x2F;&#x2F;"></a>ftp:&#x2F;&#x2F;</h3><p>用法<br><a href="ftp://example.com/pub/file.txt">ftp://example.com/pub/file.txt</a></p>
-<h3 id="php-x2F-x2F"><a href="#php-x2F-x2F" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-x2F-x2F-input"><a href="#php-x2F-x2F-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
-<h4 id="php-x2F-x2F-filter"><a href="#php-x2F-x2F-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
-<h3 id="phar-x2F-x2F"><a href="#phar-x2F-x2F" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
+    <title>建站相关</title>
+    <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
+    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
+<p><a href="https://theme-next.js.org/">Next</a></p>
+<p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
 ]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
   </entry>
   <entry>
     <title>常用函数</title>
@@ -106,12 +97,21 @@
       </categories>
   </entry>
   <entry>
-    <title>建站相关</title>
-    <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
-    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
-<p><a href="https://theme-next.js.org/">Next</a></p>
-<p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
+    <title>支持的协议和封装协议</title>
+    <url>/2023/06/30/%E6%94%AF%E6%8C%81%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%92%8C%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<p>file:&#x2F;&#x2F; — 访问本地文件系统<br>http:&#x2F;&#x2F; — 访问 HTTP(s) 网址<br>ftp:&#x2F;&#x2F; — 访问 FTP(s) URLs<br>php:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）<br>zlib:&#x2F;&#x2F; — 压缩流<br>data:&#x2F;&#x2F; — 数据（RFC 2397）<br>glob:&#x2F;&#x2F; — 查找匹配的文件路径模式<br>phar:&#x2F;&#x2F; — PHP 归档<br>ssh2:&#x2F;&#x2F; — 安全外壳协议 2<br>rar:&#x2F;&#x2F; — RAR<br>ogg:&#x2F;&#x2F; — 音频流<br>expect:&#x2F;&#x2F; — 处理交互式的流</p>
+<p><a href="https://www.php.net/manual/zh/wrappers.php">官网文档</a></p>
+<span id="more"></span>
+<h3 id="file-x2F-x2F"><a href="#file-x2F-x2F" class="headerlink" title="file&#x2F;&#x2F;"></a>file&#x2F;&#x2F;</h3><p>用法<br>file:&#x2F;&#x2F;&#x2F;path&#x2F;to&#x2F;file.ext</p>
+<h3 id="http-x2F-x2F"><a href="#http-x2F-x2F" class="headerlink" title="http:&#x2F;&#x2F;"></a>http:&#x2F;&#x2F;</h3><p>用法<br><a href="http://example.com/">http://example.com</a></p>
+<h3 id="ftp-x2F-x2F"><a href="#ftp-x2F-x2F" class="headerlink" title="ftp:&#x2F;&#x2F;"></a>ftp:&#x2F;&#x2F;</h3><p>用法<br><a href="ftp://example.com/pub/file.txt">ftp://example.com/pub/file.txt</a></p>
+<h3 id="php-x2F-x2F"><a href="#php-x2F-x2F" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-x2F-x2F-input"><a href="#php-x2F-x2F-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
+<h4 id="php-x2F-x2F-filter"><a href="#php-x2F-x2F-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
+<h3 id="phar-x2F-x2F"><a href="#phar-x2F-x2F" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
 ]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
   </entry>
   <entry>
     <title>注入类型</title>
@@ -136,9 +136,21 @@
       </categories>
   </entry>
   <entry>
-    <title>过滤应对</title>
-    <url>/2023/06/28/%E8%BF%87%E6%BB%A4%E5%BA%94%E5%AF%B9/</url>
-    <content><![CDATA[<h4 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h4><p>空格 &#x3D;&gt; &#x2F;**&#x2F;<br>等号 &#x3D;&gt; like()<br>“#”  &#x3D;&gt; %23</p>
+    <title>补充</title>
+    <url>/2023/06/29/%E8%A1%A5%E5%85%85/</url>
+    <content><![CDATA[<h3 id="数据库种类"><a href="#数据库种类" class="headerlink" title="数据库种类"></a>数据库种类</h3><span id="more"></span>
+<p><a href="http://sqlwiki.radare.cn/">sqlwiki</a></p>
+<h4 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h4><p>端口号：3306<br>注释符号：–，空格，&#x2F;**&#x2F;内联注释，#</p>
+<blockquote>
+<p><code>#</code> 和<code>--</code>的区别就是：<code>#</code>后面直接加注释内容，而<code>--</code>的第 2 个破折号后需要跟一个空格符在加注释内容</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 查询全部数据库</span><br><span class="line"><span class="keyword">select</span> schema_name <span class="keyword">from</span> information_schema.schemata</span><br><span class="line"># 查询全部数据库和表的对应</span><br><span class="line"><span class="keyword">select</span> table_schema,table_name <span class="keyword">from</span> information_schema.tables</span><br><span class="line"># 查询全部列</span><br><span class="line"><span class="keyword">select</span> 列 <span class="keyword">from</span> xxx库.xxx表; 查询值</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> table_name, column_name <span class="keyword">FROM</span> information_schema.columns</span><br></pre></td></tr></table></figure>
+
+<h4 id="SQLServer"><a href="#SQLServer" class="headerlink" title="SQLServer"></a>SQLServer</h4><p>端口号：1443<br>注释符号：–，&#x2F;**&#x2F;</p>
+<h4 id="Oracle"><a href="#Oracle" class="headerlink" title="Oracle"></a>Oracle</h4><p>端口号：1521<br>注释符号：–，&#x2F;**&#x2F;</p>
+<h4 id="PostgreSQL"><a href="#PostgreSQL" class="headerlink" title="PostgreSQL"></a>PostgreSQL</h4><p>端口号：5432或5433<br>注释符号：–，&#x2F;**&#x2F;</p>
+<h4 id="DB2"><a href="#DB2" class="headerlink" title="DB2"></a>DB2</h4><p>端口号：5000</p>
+<h4 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h4><p>端口号：27017</p>
 ]]></content>
       <categories>
         <category>SQL注入</category>
@@ -177,21 +189,9 @@
       </categories>
   </entry>
   <entry>
-    <title>补充</title>
-    <url>/2023/06/29/%E8%A1%A5%E5%85%85/</url>
-    <content><![CDATA[<h3 id="数据库种类"><a href="#数据库种类" class="headerlink" title="数据库种类"></a>数据库种类</h3><span id="more"></span>
-<p><a href="http://sqlwiki.radare.cn/">sqlwiki</a></p>
-<h4 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h4><p>端口号：3306<br>注释符号：–，空格，&#x2F;**&#x2F;内联注释，#</p>
-<blockquote>
-<p><code>#</code> 和<code>--</code>的区别就是：<code>#</code>后面直接加注释内容，而<code>--</code>的第 2 个破折号后需要跟一个空格符在加注释内容</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 查询全部数据库</span><br><span class="line"><span class="keyword">select</span> schema_name <span class="keyword">from</span> information_schema.schemata</span><br><span class="line"># 查询全部数据库和表的对应</span><br><span class="line"><span class="keyword">select</span> table_schema,table_name <span class="keyword">from</span> information_schema.tables</span><br><span class="line"># 查询全部列</span><br><span class="line"><span class="keyword">select</span> 列 <span class="keyword">from</span> xxx库.xxx表; 查询值</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> table_name, column_name <span class="keyword">FROM</span> information_schema.columns</span><br></pre></td></tr></table></figure>
-
-<h4 id="SQLServer"><a href="#SQLServer" class="headerlink" title="SQLServer"></a>SQLServer</h4><p>端口号：1443<br>注释符号：–，&#x2F;**&#x2F;</p>
-<h4 id="Oracle"><a href="#Oracle" class="headerlink" title="Oracle"></a>Oracle</h4><p>端口号：1521<br>注释符号：–，&#x2F;**&#x2F;</p>
-<h4 id="PostgreSQL"><a href="#PostgreSQL" class="headerlink" title="PostgreSQL"></a>PostgreSQL</h4><p>端口号：5432或5433<br>注释符号：–，&#x2F;**&#x2F;</p>
-<h4 id="DB2"><a href="#DB2" class="headerlink" title="DB2"></a>DB2</h4><p>端口号：5000</p>
-<h4 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h4><p>端口号：27017</p>
+    <title>过滤应对</title>
+    <url>/2023/06/28/%E8%BF%87%E6%BB%A4%E5%BA%94%E5%AF%B9/</url>
+    <content><![CDATA[<h4 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h4><p>空格 &#x3D;&gt; &#x2F;**&#x2F;<br>等号 &#x3D;&gt; like()<br>“#”  &#x3D;&gt; %23</p>
 ]]></content>
       <categories>
         <category>SQL注入</category>
