@@ -17,39 +17,6 @@
       </categories>
   </entry>
   <entry>
-    <title>常用函数</title>
-    <url>/2023/06/28/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>SQL注入常用函数</p>
-<span id="more"></span>
-<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回SQL。</p>
-<h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>substr()、substring()功能相同，均为截取字符串</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length（可选） 指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
-
-<h4 id="mid"><a href="#mid" class="headerlink" title="mid()"></a>mid()</h4><p>mid 函数用于从文本字段中提取字符</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, kength)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
-
-<h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
-<h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
-<h4 id="updatexml"><a href="#updatexml" class="headerlink" title="updatexml()"></a>updatexml()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">updatexml(XML_document, XPath_string, new_value);</span><br><span class="line">第一个参数：XML_document 是 String 格式，为 XML 文档对象的名称，文中为 Doc</span><br><span class="line">第二个参数：XPath_string (Xpath 格式的字符串)</span><br><span class="line">第三个参数：new_value，String 格式，替换查找到的符合条件的数据</span><br></pre></td></tr></table></figure>
-
-<p>用例</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select database()),0x7e),1) --+  </span></span><br></pre></td></tr></table></figure>
-
-<h4 id="extractvalue"><a href="#extractvalue" class="headerlink" title="extractvalue()"></a>extractvalue()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">extractvalue(<span class="string">&#x27;XML_document&#x27;</span>,<span class="string">&#x27;Xpath_string&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>用例</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">id<span class="operator">=</span><span class="number">-1</span><span class="string">&#x27;and extractvalue(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select database())))--+</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="exp"><a href="#exp" class="headerlink" title="exp()"></a>exp()</h4><p>以 e 为底数的指数函数，可能会存在溢出</p>
-<h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
-<h4 id="group-concat"><a href="#group-concat" class="headerlink" title="group_concat()"></a>group_concat()</h4><p>将 group by 产生的同一个分组中的值连接起来，返回一个字符串结果</p>
-<h4 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h4><p>将多个字符串连接成一个字符串</p>
-<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length（）"><a href="#length（）" class="headerlink" title="length（）"></a>length（）</h4>]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
-  </entry>
-  <entry>
     <title>常见解</title>
     <url>/2023/06/29/%E5%B8%B8%E8%A7%81%E8%A7%A3/</url>
     <content><![CDATA[<h4 id="某例题"><a href="#某例题" class="headerlink" title="某例题"></a>某例题</h4><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">?wllm=1</span><br><span class="line">?wllm=1&#x27;</span><br><span class="line"></span><br><span class="line">报错，数字型，字符型</span><br></pre></td></tr></table></figure>
@@ -89,29 +56,45 @@
       </categories>
   </entry>
   <entry>
+    <title>常用函数</title>
+    <url>/2023/06/28/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>SQL注入常用函数</p>
+<span id="more"></span>
+<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回SQL。</p>
+<h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>substr()、substring()功能相同，均为截取字符串</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length（可选） 指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
+
+<h4 id="mid"><a href="#mid" class="headerlink" title="mid()"></a>mid()</h4><p>mid 函数用于从文本字段中提取字符</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, kength)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
+
+<h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
+<h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
+<h4 id="updatexml"><a href="#updatexml" class="headerlink" title="updatexml()"></a>updatexml()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">updatexml(XML_document, XPath_string, new_value);</span><br><span class="line">第一个参数：XML_document 是 String 格式，为 XML 文档对象的名称，文中为 Doc</span><br><span class="line">第二个参数：XPath_string (Xpath 格式的字符串)</span><br><span class="line">第三个参数：new_value，String 格式，替换查找到的符合条件的数据</span><br></pre></td></tr></table></figure>
+
+<p>用例</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select database()),0x7e),1) --+  </span></span><br></pre></td></tr></table></figure>
+
+<h4 id="extractvalue"><a href="#extractvalue" class="headerlink" title="extractvalue()"></a>extractvalue()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">extractvalue(<span class="string">&#x27;XML_document&#x27;</span>,<span class="string">&#x27;Xpath_string&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>用例</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">id<span class="operator">=</span><span class="number">-1</span><span class="string">&#x27;and extractvalue(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select database())))--+</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="exp"><a href="#exp" class="headerlink" title="exp()"></a>exp()</h4><p>以 e 为底数的指数函数，可能会存在溢出</p>
+<h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
+<h4 id="group-concat"><a href="#group-concat" class="headerlink" title="group_concat()"></a>group_concat()</h4><p>将 group by 产生的同一个分组中的值连接起来，返回一个字符串结果</p>
+<h4 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h4><p>将多个字符串连接成一个字符串</p>
+<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length（）"><a href="#length（）" class="headerlink" title="length（）"></a>length（）</h4>]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
     <title>建站相关</title>
     <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
     <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
 <p><a href="https://theme-next.js.org/">Next</a></p>
 <p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>支持的协议和封装协议</title>
-    <url>/2023/06/30/%E6%94%AF%E6%8C%81%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%92%8C%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE/</url>
-    <content><![CDATA[<p>file:&#x2F;&#x2F; — 访问本地文件系统<br>http:&#x2F;&#x2F; — 访问 HTTP(s) 网址<br>ftp:&#x2F;&#x2F; — 访问 FTP(s) URLs<br>php:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）<br>zlib:&#x2F;&#x2F; — 压缩流<br>data:&#x2F;&#x2F; — 数据（RFC 2397）<br>glob:&#x2F;&#x2F; — 查找匹配的文件路径模式<br>phar:&#x2F;&#x2F; — PHP 归档<br>ssh2:&#x2F;&#x2F; — 安全外壳协议 2<br>rar:&#x2F;&#x2F; — RAR<br>ogg:&#x2F;&#x2F; — 音频流<br>expect:&#x2F;&#x2F; — 处理交互式的流</p>
-<p><a href="https://www.php.net/manual/zh/wrappers.php">官网文档</a></p>
-<span id="more"></span>
-<h3 id="file-x2F-x2F"><a href="#file-x2F-x2F" class="headerlink" title="file&#x2F;&#x2F;"></a>file&#x2F;&#x2F;</h3><p>用法<br>file:&#x2F;&#x2F;&#x2F;path&#x2F;to&#x2F;file.ext</p>
-<h3 id="http-x2F-x2F"><a href="#http-x2F-x2F" class="headerlink" title="http:&#x2F;&#x2F;"></a>http:&#x2F;&#x2F;</h3><p>用法<br><a href="http://example.com/">http://example.com</a></p>
-<h3 id="ftp-x2F-x2F"><a href="#ftp-x2F-x2F" class="headerlink" title="ftp:&#x2F;&#x2F;"></a>ftp:&#x2F;&#x2F;</h3><p>用法<br><a href="ftp://example.com/pub/file.txt">ftp://example.com/pub/file.txt</a></p>
-<h3 id="php-x2F-x2F"><a href="#php-x2F-x2F" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-x2F-x2F-input"><a href="#php-x2F-x2F-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
-<h4 id="php-x2F-x2F-filter"><a href="#php-x2F-x2F-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
-<h3 id="phar-x2F-x2F"><a href="#phar-x2F-x2F" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
   </entry>
   <entry>
     <title>注入类型</title>
@@ -133,6 +116,23 @@
 ]]></content>
       <categories>
         <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>支持的协议和封装协议</title>
+    <url>/2023/06/30/%E6%94%AF%E6%8C%81%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%92%8C%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<p>file:&#x2F;&#x2F; — 访问本地文件系统<br>http:&#x2F;&#x2F; — 访问 HTTP(s) 网址<br>ftp:&#x2F;&#x2F; — 访问 FTP(s) URLs<br>php:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）<br>zlib:&#x2F;&#x2F; — 压缩流<br>data:&#x2F;&#x2F; — 数据（RFC 2397）<br>glob:&#x2F;&#x2F; — 查找匹配的文件路径模式<br>phar:&#x2F;&#x2F; — PHP 归档<br>ssh2:&#x2F;&#x2F; — 安全外壳协议 2<br>rar:&#x2F;&#x2F; — RAR<br>ogg:&#x2F;&#x2F; — 音频流<br>expect:&#x2F;&#x2F; — 处理交互式的流</p>
+<p><a href="https://www.php.net/manual/zh/wrappers.php">官网文档</a></p>
+<span id="more"></span>
+<h3 id="file-x2F-x2F"><a href="#file-x2F-x2F" class="headerlink" title="file&#x2F;&#x2F;"></a>file&#x2F;&#x2F;</h3><p>用法<br>file:&#x2F;&#x2F;&#x2F;path&#x2F;to&#x2F;file.ext</p>
+<h3 id="http-x2F-x2F"><a href="#http-x2F-x2F" class="headerlink" title="http:&#x2F;&#x2F;"></a>http:&#x2F;&#x2F;</h3><p>用法<br><a href="http://example.com/">http://example.com</a></p>
+<h3 id="ftp-x2F-x2F"><a href="#ftp-x2F-x2F" class="headerlink" title="ftp:&#x2F;&#x2F;"></a>ftp:&#x2F;&#x2F;</h3><p>用法<br><a href="ftp://example.com/pub/file.txt">ftp://example.com/pub/file.txt</a></p>
+<h3 id="php-x2F-x2F"><a href="#php-x2F-x2F" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-x2F-x2F-input"><a href="#php-x2F-x2F-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
+<h4 id="php-x2F-x2F-filter"><a href="#php-x2F-x2F-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
+<h3 id="phar-x2F-x2F"><a href="#phar-x2F-x2F" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
+]]></content>
+      <categories>
+        <category>PHP</category>
       </categories>
   </entry>
   <entry>
