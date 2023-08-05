@@ -5,8 +5,31 @@
     <url>/2023/06/28/wallpaper/</url>
     <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
 <p><img src="/images/RE4GpUM.jpg" alt="Bing 2023/6/28"></p>
-<p><img src="/images/AA12shEn.jpg" alt="Bing 2023/7/6"></p>
+<p><img src="/images/RE4wEae.jpg" alt="RE4wEae"></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>程序执行函数</title>
+    <url>/2023/08/05/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p><a href="https://www.php.net/manual/zh/ref.exec.php">程序执行函数</a></p>
+<hr>
+<ul>
+<li><code>escapeshellarg</code> — 把字符串转义为可以在 shell 命令里使用的参数</li>
+<li><code>escapeshellcmd</code> — shell 元字符转义</li>
+<li><code>exec</code> — 执行一个外部程序</li>
+<li><code>passthru</code> — 执行外部程序并且显示原始输出</li>
+<li><code>proc_close</code> — 关闭由 proc_open 打开的进程并且返回进程退出码</li>
+<li><code>proc_get_status</code> — 获取由 proc_open 函数打开的进程的信息</li>
+<li><code>proc_nice</code> — 修改当前进程的优先级</li>
+<li><code>proc_open</code> — 执行一个命令，并且打开用来输入&#x2F;输出的文件指针。</li>
+<li><code>proc_terminate</code> — 杀死由 proc_open 打开的进程</li>
+<li><code>shell_exec</code>— 通过 shell 执行命令并将完整的输出以字符串的方式返回</li>
+<li><code>system</code> — 执行外部程序，并且显示输出</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
   </entry>
   <entry>
     <title>建站相关</title>
@@ -15,6 +38,27 @@
 <p><a href="https://theme-next.js.org/">Next</a></p>
 <p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>超全局变量</title>
+    <url>/2023/08/05/%E8%B6%85%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>超全局变量 — 在全部作用域中始终可用的内置变量<br><a href="https://www.php.net/manual/zh/language.variables.superglobals.php">PHP: 超全局变量 - Manual</a></p>
+<hr>
+<ul>
+<li><code>$GLOBALS</code> — 引用全局作用域中可用的全部变量</li>
+<li><code>$_SERVER</code> — 服务器和执行环境信息</li>
+<li><code>$_GET</code> — HTTP GET 变量</li>
+<li><code>$_POST</code> — HTTP POST 变量</li>
+<li><code>$_FILES</code> — HTTP 文件上传变量</li>
+<li><code>$_COOKIE</code> — HTTP Cookies</li>
+<li><code>$_SESSION</code> — Session 变量</li>
+<li><code>$_REQUEST</code> — HTTP Request 变量</li>
+<li><code>$_ENV</code> — 环境变量</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
   </entry>
   <entry>
     <title>支持的协议和封装协议</title>
@@ -75,39 +119,6 @@
       </categories>
   </entry>
   <entry>
-    <title>常用函数</title>
-    <url>/2023/06/28/SQL/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>SQL注入常用函数</p>
-<span id="more"></span>
-<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回SQL。</p>
-<h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>substr()、substring()功能相同，均为截取字符串</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length（可选） 指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
-
-<h4 id="mid"><a href="#mid" class="headerlink" title="mid()"></a>mid()</h4><p>mid 函数用于从文本字段中提取字符</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, kength)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
-
-<h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
-<h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
-<h4 id="updatexml"><a href="#updatexml" class="headerlink" title="updatexml()"></a>updatexml()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">updatexml(XML_document, XPath_string, new_value);</span><br><span class="line">第一个参数：XML_document 是 String 格式，为 XML 文档对象的名称，文中为 Doc</span><br><span class="line">第二个参数：XPath_string (Xpath 格式的字符串)</span><br><span class="line">第三个参数：new_value，String 格式，替换查找到的符合条件的数据</span><br></pre></td></tr></table></figure>
-
-<p>用例</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select database()),0x7e),1) --+  </span></span><br></pre></td></tr></table></figure>
-
-<h4 id="extractvalue"><a href="#extractvalue" class="headerlink" title="extractvalue()"></a>extractvalue()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">extractvalue(<span class="string">&#x27;XML_document&#x27;</span>,<span class="string">&#x27;Xpath_string&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>用例</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">id<span class="operator">=</span><span class="number">-1</span><span class="string">&#x27;and extractvalue(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select database())))--+</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="exp"><a href="#exp" class="headerlink" title="exp()"></a>exp()</h4><p>以 e 为底数的指数函数，可能会存在溢出</p>
-<h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
-<h4 id="group-concat"><a href="#group-concat" class="headerlink" title="group_concat()"></a>group_concat()</h4><p>将 group by 产生的同一个分组中的值连接起来，返回一个字符串结果</p>
-<h4 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h4><p>将多个字符串连接成一个字符串</p>
-<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length（）"><a href="#length（）" class="headerlink" title="length（）"></a>length（）</h4>]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
-  </entry>
-  <entry>
     <title>常见解</title>
     <url>/2023/06/29/SQL/%E5%B8%B8%E8%A7%81%E8%A7%A3/</url>
     <content><![CDATA[<h4 id="某例题"><a href="#某例题" class="headerlink" title="某例题"></a>某例题</h4><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">?wllm=1</span><br><span class="line">?wllm=1&#x27;</span><br><span class="line"></span><br><span class="line">报错，数字型，字符型</span><br></pre></td></tr></table></figure>
@@ -147,22 +158,34 @@
       </categories>
   </entry>
   <entry>
-    <title>补充</title>
-    <url>/2023/06/29/SQL/%E8%A1%A5%E5%85%85/</url>
-    <content><![CDATA[<h3 id="数据库种类"><a href="#数据库种类" class="headerlink" title="数据库种类"></a>数据库种类</h3><span id="more"></span>
-<p><a href="http://sqlwiki.radare.cn/">sqlwiki</a></p>
-<h4 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h4><p>端口号：3306<br>注释符号：–，空格，&#x2F;**&#x2F;内联注释，#</p>
-<blockquote>
-<p><code>#</code> 和<code>--</code>的区别就是：<code>#</code>后面直接加注释内容，而<code>--</code>的第 2 个破折号后需要跟一个空格符在加注释内容</p>
-</blockquote>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 查询全部数据库</span><br><span class="line"><span class="keyword">select</span> schema_name <span class="keyword">from</span> information_schema.schemata</span><br><span class="line"># 查询全部数据库和表的对应</span><br><span class="line"><span class="keyword">select</span> table_schema,table_name <span class="keyword">from</span> information_schema.tables</span><br><span class="line"># 查询全部列</span><br><span class="line"><span class="keyword">select</span> 列 <span class="keyword">from</span> xxx库.xxx表; 查询值</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> table_name, column_name <span class="keyword">FROM</span> information_schema.columns</span><br></pre></td></tr></table></figure>
+    <title>常用函数</title>
+    <url>/2023/06/28/SQL/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>SQL注入常用函数</p>
+<span id="more"></span>
+<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回SQL。</p>
+<h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>substr()、substring()功能相同，均为截取字符串</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length（可选） 指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
 
-<h4 id="SQLServer"><a href="#SQLServer" class="headerlink" title="SQLServer"></a>SQLServer</h4><p>端口号：1443<br>注释符号：–，&#x2F;**&#x2F;</p>
-<h4 id="Oracle"><a href="#Oracle" class="headerlink" title="Oracle"></a>Oracle</h4><p>端口号：1521<br>注释符号：–，&#x2F;**&#x2F;</p>
-<h4 id="PostgreSQL"><a href="#PostgreSQL" class="headerlink" title="PostgreSQL"></a>PostgreSQL</h4><p>端口号：5432或5433<br>注释符号：–，&#x2F;**&#x2F;</p>
-<h4 id="DB2"><a href="#DB2" class="headerlink" title="DB2"></a>DB2</h4><p>端口号：5000</p>
-<h4 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h4><p>端口号：27017</p>
-]]></content>
+<h4 id="mid"><a href="#mid" class="headerlink" title="mid()"></a>mid()</h4><p>mid 函数用于从文本字段中提取字符</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, kength)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
+
+<h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
+<h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
+<h4 id="updatexml"><a href="#updatexml" class="headerlink" title="updatexml()"></a>updatexml()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">updatexml(XML_document, XPath_string, new_value);</span><br><span class="line">第一个参数：XML_document 是 String 格式，为 XML 文档对象的名称，文中为 Doc</span><br><span class="line">第二个参数：XPath_string (Xpath 格式的字符串)</span><br><span class="line">第三个参数：new_value，String 格式，替换查找到的符合条件的数据</span><br></pre></td></tr></table></figure>
+
+<p>用例</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select database()),0x7e),1) --+  </span></span><br></pre></td></tr></table></figure>
+
+<h4 id="extractvalue"><a href="#extractvalue" class="headerlink" title="extractvalue()"></a>extractvalue()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">extractvalue(<span class="string">&#x27;XML_document&#x27;</span>,<span class="string">&#x27;Xpath_string&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>用例</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">id<span class="operator">=</span><span class="number">-1</span><span class="string">&#x27;and extractvalue(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select database())))--+</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="exp"><a href="#exp" class="headerlink" title="exp()"></a>exp()</h4><p>以 e 为底数的指数函数，可能会存在溢出</p>
+<h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
+<h4 id="group-concat"><a href="#group-concat" class="headerlink" title="group_concat()"></a>group_concat()</h4><p>将 group by 产生的同一个分组中的值连接起来，返回一个字符串结果</p>
+<h4 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h4><p>将多个字符串连接成一个字符串</p>
+<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length（）"><a href="#length（）" class="headerlink" title="length（）"></a>length（）</h4>]]></content>
       <categories>
         <category>SQL注入</category>
       </categories>
@@ -184,6 +207,27 @@
 <h3 id="堆叠注入"><a href="#堆叠注入" class="headerlink" title="堆叠注入"></a>堆叠注入</h3><p>执行多条SQL语句<br>Oracle 不支持堆叠查询注入</p>
 <h3 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h3><p>主要是利用 UNION</p>
 <h3 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h3><h3 id="Cookie-注入"><a href="#Cookie-注入" class="headerlink" title="Cookie 注入"></a>Cookie 注入</h3><h3 id="编码注入"><a href="#编码注入" class="headerlink" title="编码注入"></a>编码注入</h3><h3 id="XFF-注入攻击"><a href="#XFF-注入攻击" class="headerlink" title="XFF 注入攻击"></a>XFF 注入攻击</h3><p>X-Forware-For</p>
+]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>补充</title>
+    <url>/2023/06/29/SQL/%E8%A1%A5%E5%85%85/</url>
+    <content><![CDATA[<h3 id="数据库种类"><a href="#数据库种类" class="headerlink" title="数据库种类"></a>数据库种类</h3><span id="more"></span>
+<p><a href="http://sqlwiki.radare.cn/">sqlwiki</a></p>
+<h4 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h4><p>端口号：3306<br>注释符号：–，空格，&#x2F;**&#x2F;内联注释，#</p>
+<blockquote>
+<p><code>#</code> 和<code>--</code>的区别就是：<code>#</code>后面直接加注释内容，而<code>--</code>的第 2 个破折号后需要跟一个空格符在加注释内容</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"># 查询全部数据库</span><br><span class="line"><span class="keyword">select</span> schema_name <span class="keyword">from</span> information_schema.schemata</span><br><span class="line"># 查询全部数据库和表的对应</span><br><span class="line"><span class="keyword">select</span> table_schema,table_name <span class="keyword">from</span> information_schema.tables</span><br><span class="line"># 查询全部列</span><br><span class="line"><span class="keyword">select</span> 列 <span class="keyword">from</span> xxx库.xxx表; 查询值</span><br><span class="line"></span><br><span class="line"><span class="keyword">SELECT</span> table_name, column_name <span class="keyword">FROM</span> information_schema.columns</span><br></pre></td></tr></table></figure>
+
+<h4 id="SQLServer"><a href="#SQLServer" class="headerlink" title="SQLServer"></a>SQLServer</h4><p>端口号：1443<br>注释符号：–，&#x2F;**&#x2F;</p>
+<h4 id="Oracle"><a href="#Oracle" class="headerlink" title="Oracle"></a>Oracle</h4><p>端口号：1521<br>注释符号：–，&#x2F;**&#x2F;</p>
+<h4 id="PostgreSQL"><a href="#PostgreSQL" class="headerlink" title="PostgreSQL"></a>PostgreSQL</h4><p>端口号：5432或5433<br>注释符号：–，&#x2F;**&#x2F;</p>
+<h4 id="DB2"><a href="#DB2" class="headerlink" title="DB2"></a>DB2</h4><p>端口号：5000</p>
+<h4 id="MongoDB"><a href="#MongoDB" class="headerlink" title="MongoDB"></a>MongoDB</h4><p>端口号：27017</p>
 ]]></content>
       <categories>
         <category>SQL注入</category>
