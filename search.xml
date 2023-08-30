@@ -1,19 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>SSTI（模板注入）</title>
-    <url>/2023/08/30/SSTI%EF%BC%88%E6%A8%A1%E6%9D%BF%E6%B3%A8%E5%85%A5%EF%BC%89/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>SSTI</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>建站相关</title>
     <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
     <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
 <p><a href="https://theme-next.js.org/">Next</a></p>
 <p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>SSTI（模板注入）</title>
+    <url>/2023/08/30/SSTI%EF%BC%88%E6%A8%A1%E6%9D%BF%E6%B3%A8%E5%85%A5%EF%BC%89/</url>
+    <content><![CDATA[<p>SSTI:Server Side Template Injection，服务端模板注入。</p>
+<span id="more"></span>
+<p>常见模板：<br>Python: Jinja</p>
+<h3 id="Jinja"><a href="#Jinja" class="headerlink" title="Jinja"></a>Jinja</h3><p>jinja 的官方文档：<a href="https://jinja.palletsprojects.com/en/3.1.x/templates/">Template Designer Documentation — Jinja Documentation (3.1.x) (palletsprojects.com)</a></p>
+<p>默认的几种分隔符</p>
+<ul>
+<li><code>&#123;% ... %&#125;</code> for <a href="https://jinja.palletsprojects.com/en/3.1.x/templates/#list-of-control-structures">Statements</a></li>
+<li><code>&#123;&#123; ... &#125;&#125;</code> for <a href="https://jinja.palletsprojects.com/en/3.1.x/templates/#expressions">Expressions</a> to print to the template output</li>
+<li>&#96;&#96; for <a href="https://jinja.palletsprojects.com/en/3.1.x/templates/#comments">Comments</a> not included in the template output</li>
+</ul>
+<p><a href="https://www.cnblogs.com/hetianlab/p/14154635.html">细说Jinja2之SSTI&amp;bypass - 合天网安实验室 - 博客园 (cnblogs.com)</a></p>
+<p><a href="https://www.cnblogs.com/bmjoker/p/13508538.html">1. SSTI（模板注入）漏洞（入门篇） - bmjoker - 博客园 (cnblogs.com)</a></p>
+<p><a href="https://github.com/Marven11/Fenjing">Marven11&#x2F;Fenjing: 一个类似SQLMap的Jinja2 SSTI利用脚本 | A SQLMap-like Jinja2 SSTI cracker (github.com)</a></p>
+]]></content>
+      <tags>
+        <tag>SSTI</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>wallpaper</title>
+    <url>/2023/06/28/wallpaper/</url>
+    <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
+<p><img src="/images/RE4GpUM.jpg" alt="Bing 2023/6/28"></p>
+<p><img src="/images/RE4wEae.jpg" alt="RE4wEae"></p>
+<p><img src="/images/RE4wtd6.jpg" alt="RE4wtd6"></p>
 ]]></content>
   </entry>
   <entry>
@@ -28,38 +50,6 @@
 <h3 id="php"><a href="#php" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-input"><a href="#php-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
 <h4 id="php-filter"><a href="#php-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
 <h3 id="phar"><a href="#phar" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>wallpaper</title>
-    <url>/2023/06/28/wallpaper/</url>
-    <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
-<p><img src="/images/RE4GpUM.jpg" alt="Bing 2023/6/28"></p>
-<p><img src="/images/RE4wEae.jpg" alt="RE4wEae"></p>
-<p><img src="/images/RE4wtd6.jpg" alt="RE4wtd6"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>程序执行函数</title>
-    <url>/2023/08/05/PHP/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p><a href="https://www.php.net/manual/zh/ref.exec.php">程序执行函数</a></p>
-<hr>
-<ul>
-<li><code>escapeshellarg</code> — 把字符串转义为可以在 shell 命令里使用的参数</li>
-<li><code>escapeshellcmd</code> — shell 元字符转义</li>
-<li><code>exec</code> — 执行一个外部程序</li>
-<li><code>passthru</code> — 执行外部程序并且显示原始输出</li>
-<li><code>proc_close</code> — 关闭由 proc_open 打开的进程并且返回进程退出码</li>
-<li><code>proc_get_status</code> — 获取由 proc_open 函数打开的进程的信息</li>
-<li><code>proc_nice</code> — 修改当前进程的优先级</li>
-<li><code>proc_open</code> — 执行一个命令，并且打开用来输入&#x2F;输出的文件指针。</li>
-<li><code>proc_terminate</code> — 杀死由 proc_open 打开的进程</li>
-<li><code>shell_exec</code>— 通过 shell 执行命令并将完整的输出以字符串的方式返回</li>
-<li><code>system</code> — 执行外部程序，并且显示输出</li>
-</ul>
 ]]></content>
       <categories>
         <category>PHP</category>
@@ -94,6 +84,38 @@
 
 <p>示例</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">sqlmap -u “http://<span class="number">1.14</span><span class="number">.71</span><span class="number">.254</span>:<span class="number">28199</span>/index.php?<span class="built_in">id</span>=<span class="number">1</span>” --dbs  </span><br><span class="line">sqlmap -u “http://<span class="number">1.14</span><span class="number">.71</span><span class="number">.254</span>:<span class="number">28199</span>/index.php?<span class="built_in">id</span>=<span class="number">1</span>” -D test_db --tables  </span><br><span class="line">sqlmap -u “http://<span class="number">1.14</span><span class="number">.71</span><span class="number">.254</span>:<span class="number">28199</span>/index.php?<span class="built_in">id</span>=<span class="number">1</span>” -D test_db -T test_tb --columns  </span><br><span class="line">sqlmap -u “http://<span class="number">1.14</span><span class="number">.71</span><span class="number">.254</span>:<span class="number">28199</span>/index.php?<span class="built_in">id</span>=<span class="number">1</span>” -D test_db -T test_tb -C flag --dump</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>程序执行函数</title>
+    <url>/2023/08/05/PHP/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p><a href="https://www.php.net/manual/zh/ref.exec.php">程序执行函数</a></p>
+<hr>
+<ul>
+<li><code>escapeshellarg</code> — 把字符串转义为可以在 shell 命令里使用的参数</li>
+<li><code>escapeshellcmd</code> — shell 元字符转义</li>
+<li><code>exec</code> — 执行一个外部程序</li>
+<li><code>passthru</code> — 执行外部程序并且显示原始输出</li>
+<li><code>proc_close</code> — 关闭由 proc_open 打开的进程并且返回进程退出码</li>
+<li><code>proc_get_status</code> — 获取由 proc_open 函数打开的进程的信息</li>
+<li><code>proc_nice</code> — 修改当前进程的优先级</li>
+<li><code>proc_open</code> — 执行一个命令，并且打开用来输入&#x2F;输出的文件指针。</li>
+<li><code>proc_terminate</code> — 杀死由 proc_open 打开的进程</li>
+<li><code>shell_exec</code>— 通过 shell 执行命令并将完整的输出以字符串的方式返回</li>
+<li><code>system</code> — 执行外部程序，并且显示输出</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>万能密码</title>
+    <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</url>
+    <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&quot;or 1=1--</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>SQL注入</category>
@@ -177,15 +199,6 @@
 
 <p>回显：<br>XPATH syntax error: ‘~4-35cb-4537-beac-0d2ba98fa602}’<br>得到右半边</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>万能密码</title>
-    <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</url>
-    <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&quot;or 1=1--</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
   </entry>
   <entry>
     <title>常用函数</title>
