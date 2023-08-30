@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>建站相关</title>
-    <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
-    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
-<p><a href="https://theme-next.js.org/">Next</a></p>
-<p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>SSTI（模板注入）</title>
     <url>/2023/08/30/SSTI%EF%BC%88%E6%A8%A1%E6%9D%BF%E6%B3%A8%E5%85%A5%EF%BC%89/</url>
     <content><![CDATA[<p>SSTI:Server Side Template Injection，服务端模板注入。</p>
@@ -30,6 +22,14 @@
       </tags>
   </entry>
   <entry>
+    <title>建站相关</title>
+    <url>/2023/06/28/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/</url>
+    <content><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">Hexo</a></p>
+<p><a href="https://theme-next.js.org/">Next</a></p>
+<p><a href="https://markdown.com.cn/basic-syntax/">Markdown</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>wallpaper</title>
     <url>/2023/06/28/wallpaper/</url>
     <content><![CDATA[<p><img src="/images/RE4wyTn.jpg" alt="Bing 2023/6/28"></p>
@@ -37,44 +37,6 @@
 <p><img src="/images/RE4wEae.jpg" alt="RE4wEae"></p>
 <p><img src="/images/RE4wtd6.jpg" alt="RE4wtd6"></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>支持的协议和封装协议</title>
-    <url>/2023/06/30/PHP/%E6%94%AF%E6%8C%81%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%92%8C%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE/</url>
-    <content><![CDATA[<p>file:&#x2F;&#x2F; — 访问本地文件系统<br>http:&#x2F;&#x2F; — 访问 HTTP(s) 网址<br>ftp:&#x2F;&#x2F; — 访问 FTP(s) URLs<br>php:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）<br>zlib:&#x2F;&#x2F; — 压缩流<br>data:&#x2F;&#x2F; — 数据（RFC 2397）<br>glob:&#x2F;&#x2F; — 查找匹配的文件路径模式<br>phar:&#x2F;&#x2F; — PHP 归档<br>ssh2:&#x2F;&#x2F; — 安全外壳协议 2<br>rar:&#x2F;&#x2F; — RAR<br>ogg:&#x2F;&#x2F; — 音频流<br>expect:&#x2F;&#x2F; — 处理交互式的流  </p>
-<p><a href="https://www.php.net/manual/zh/wrappers.php">官网文档</a></p>
-<span id="more"></span>
-<h3 id="file"><a href="#file" class="headerlink" title="file&#x2F;&#x2F;"></a>file&#x2F;&#x2F;</h3><p>用法<br>file:&#x2F;&#x2F;&#x2F;path&#x2F;to&#x2F;file.ext</p>
-<h3 id="http"><a href="#http" class="headerlink" title="http:&#x2F;&#x2F;"></a>http:&#x2F;&#x2F;</h3><p>用法<br><a href="http://example.com/">http://example.com</a></p>
-<h3 id="ftp"><a href="#ftp" class="headerlink" title="ftp:&#x2F;&#x2F;"></a>ftp:&#x2F;&#x2F;</h3><p>用法<br><a href="ftp://example.com/pub/file.txt">ftp://example.com/pub/file.txt</a></p>
-<h3 id="php"><a href="#php" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-input"><a href="#php-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
-<h4 id="php-filter"><a href="#php-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
-<h3 id="phar"><a href="#phar" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>超全局变量</title>
-    <url>/2023/08/05/PHP/%E8%B6%85%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/</url>
-    <content><![CDATA[<p>超全局变量 — 在全部作用域中始终可用的内置变量<br><a href="https://www.php.net/manual/zh/language.variables.superglobals.php">PHP: 超全局变量 - Manual</a></p>
-<hr>
-<ul>
-<li><code>$GLOBALS</code> — 引用全局作用域中可用的全部变量</li>
-<li><code>$_SERVER</code> — 服务器和执行环境信息</li>
-<li><code>$_GET</code> — HTTP GET 变量</li>
-<li><code>$_POST</code> — HTTP POST 变量</li>
-<li><code>$_FILES</code> — HTTP 文件上传变量</li>
-<li><code>$_COOKIE</code> — HTTP Cookies</li>
-<li><code>$_SESSION</code> — Session 变量</li>
-<li><code>$_REQUEST</code> — HTTP Request 变量</li>
-<li><code>$_ENV</code> — 环境变量</li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
   </entry>
   <entry>
     <title>SQLmap</title>
@@ -90,29 +52,6 @@
       </categories>
   </entry>
   <entry>
-    <title>程序执行函数</title>
-    <url>/2023/08/05/PHP/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p><a href="https://www.php.net/manual/zh/ref.exec.php">程序执行函数</a></p>
-<hr>
-<ul>
-<li><code>escapeshellarg</code> — 把字符串转义为可以在 shell 命令里使用的参数</li>
-<li><code>escapeshellcmd</code> — shell 元字符转义</li>
-<li><code>exec</code> — 执行一个外部程序</li>
-<li><code>passthru</code> — 执行外部程序并且显示原始输出</li>
-<li><code>proc_close</code> — 关闭由 proc_open 打开的进程并且返回进程退出码</li>
-<li><code>proc_get_status</code> — 获取由 proc_open 函数打开的进程的信息</li>
-<li><code>proc_nice</code> — 修改当前进程的优先级</li>
-<li><code>proc_open</code> — 执行一个命令，并且打开用来输入&#x2F;输出的文件指针。</li>
-<li><code>proc_terminate</code> — 杀死由 proc_open 打开的进程</li>
-<li><code>shell_exec</code>— 通过 shell 执行命令并将完整的输出以字符串的方式返回</li>
-<li><code>system</code> — 执行外部程序，并且显示输出</li>
-</ul>
-]]></content>
-      <categories>
-        <category>PHP</category>
-      </categories>
-  </entry>
-  <entry>
     <title>万能密码</title>
     <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E4%B8%87%E8%83%BD%E5%AF%86%E7%A0%81/</url>
     <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">&quot;or 1=1--</span><br></pre></td></tr></table></figure>
@@ -122,35 +61,36 @@
       </categories>
   </entry>
   <entry>
-    <title>魔术方法</title>
-    <url>/2023/06/30/PHP/%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<p>魔术方法是一种特殊的方法，当对对象执行某些操作时会覆盖 PHP 的默认操作。<br><a href="https://www.php.net/manual/zh/language.oop5.magic.php">魔术方法</a></p>
+    <title>常用函数</title>
+    <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p>SQL注入常用函数</p>
 <span id="more"></span>
+<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回 <code>SQL</code> 。</p>
+<h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>substr()、substring()功能相同，均为截取字符串</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length (可选)指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
 
-<h3 id="sleep-和-wakeup"><a href="#sleep-和-wakeup" class="headerlink" title="__sleep()和__wakeup()"></a>__sleep()和__wakeup()</h3><p>serialize() 函数会检查类中是否存在一个魔术方法 __sleep()。如果存在，该方法会先被调用，然后才执行序列化操作。</p>
-<p>unserialize() 会检查是否存在一个 __wakeup() 方法。如果存在，则会先调用</p>
-<h3 id="serialize-和-unserialize-构造函数和析构函数"><a href="#serialize-和-unserialize-构造函数和析构函数" class="headerlink" title="__serialize()和__unserialize() 构造函数和析构函数"></a>__serialize()和__unserialize() 构造函数和析构函数</h3><p>serialize() 函数会检查类中是否存在一个魔术方法 __serialize() 。如果存在，该方法将在任何序列化之前优先执行。</p>
-<blockquote>
-<p>注意:<br>如果类中同时定义了 __serialize() 和__sleep() 两个魔术方法，则只有 __serialize() 方法会被调用。__sleep() 方法会被忽略掉。</p>
-</blockquote>
-<p>unserialize() 检查是否存在具有名为 __unserialize() 的魔术方法。此函数将会传递从__serialize() 返回的恢复数组。然后它可以根据需要从该数组中恢复对象的属性。</p>
-<blockquote>
-<p>注意:<br>如果类中同时定义了 __unserialize() 和__wakeup() 两个魔术方法，则只有 __unserialize() 方法会生效，__wakeup() 方法会被忽略。</p>
-</blockquote>
-<h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="__toString()"></a>__toString()</h3><p>__toString() 方法用于一个类被当成字符串时应怎样回应。例如 echo $obj; 应该显示些什么。</p>
-<h3 id="invoke"><a href="#invoke" class="headerlink" title="__invoke()"></a>__invoke()</h3><p>当尝试以调用函数的方式调用一个对象时，__invoke() 方法会被自动调用</p>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$obj</span> = <span class="keyword">new</span> <span class="title class_">CallableClass</span>;</span><br><span class="line"><span class="variable">$obj</span>(<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="mid"><a href="#mid" class="headerlink" title="mid()"></a>mid()</h4><p>mid 函数用于从文本字段中提取字符</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
 
-<h3 id="construct-和-destruct"><a href="#construct-和-destruct" class="headerlink" title="__construct()和__destruct()"></a>__construct()和__destruct()</h3><p>PHP 允许开发者在一个类中定义一个方法作为构造函数。具有构造函数的类会在每次创建新对象时先调用此方法，所以非常适合在使用对象之前做一些初始化工作。</p>
-<p>PHP 有析构函数的概念，这类似于其它面向对象的语言，如 C++。析构函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行。</p>
-<h3 id="set-、-get-、-isset-、-unset-属性重载"><a href="#set-、-get-、-isset-、-unset-属性重载" class="headerlink" title="__set()、__get()、__isset()、__unset() 属性重载"></a>__set()、__get()、__isset()、__unset() 属性重载</h3><p>在给不可访问（protected 或 private）或不存在的属性赋值时，__set() 会被调用。</p>
-<p>读取不可访问（protected 或 private）或不存在的属性的值时，__get() 会被调用。</p>
-<p>当对不可访问（protected 或 private）或不存在的属性调用 isset() 或 empty() 时，__isset() 会被调用。</p>
-<p>当对不可访问（protected 或 private）或不存在的属性调用 unset() 时，__unset() 会被调用。</p>
-<h3 id="call-方法重载"><a href="#call-方法重载" class="headerlink" title="__call() 方法重载"></a>__call() 方法重载</h3><p>在对象中调用一个不可访问方法时，__call() 会被调用。</p>
-]]></content>
+<h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
+<h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
+<h4 id="updatexml"><a href="#updatexml" class="headerlink" title="updatexml()"></a>updatexml()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">updatexml(XML_document, XPath_string, new_value);</span><br><span class="line">第一个参数：XML_document 是 String 格式，为 XML 文档对象的名称，文中为 Doc</span><br><span class="line">第二个参数：XPath_string (Xpath 格式的字符串)</span><br><span class="line">第三个参数：new_value，String 格式，替换查找到的符合条件的数据</span><br></pre></td></tr></table></figure>
+
+<p>用例</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select database()),0x7e),1) --+  </span></span><br></pre></td></tr></table></figure>
+
+<h4 id="extractvalue"><a href="#extractvalue" class="headerlink" title="extractvalue()"></a>extractvalue()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">extractvalue(<span class="string">&#x27;XML_document&#x27;</span>,<span class="string">&#x27;Xpath_string&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>用例</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">id<span class="operator">=</span><span class="number">-1</span><span class="string">&#x27;and extractvalue(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select database())))--+</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="exp"><a href="#exp" class="headerlink" title="exp()"></a>exp()</h4><p>以 e 为底数的指数函数，可能会存在溢出</p>
+<h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
+<h4 id="group-concat"><a href="#group-concat" class="headerlink" title="group_concat()"></a>group_concat()</h4><p>将 group by 产生的同一个分组中的值连接起来，返回一个字符串结果</p>
+<h4 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h4><p>将多个字符串连接成一个字符串</p>
+<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length"><a href="#length" class="headerlink" title="length()"></a>length()</h4>]]></content>
       <categories>
-        <category>PHP</category>
+        <category>SQL注入</category>
       </categories>
   </entry>
   <entry>
@@ -199,39 +139,6 @@
 
 <p>回显：<br>XPATH syntax error: ‘~4-35cb-4537-beac-0d2ba98fa602}’<br>得到右半边</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>常用函数</title>
-    <url>/2023/06/28/SQL%E6%B3%A8%E5%85%A5/%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<p>SQL注入常用函数</p>
-<span id="more"></span>
-<h4 id="left"><a href="#left" class="headerlink" title="left()"></a>left()</h4><p>left() 函数从提供的字符串的左侧提取给定数量的字符。<br>例如， <code>LEFT(&#39;SQL Server&#39;，3)</code> 返回 <code>SQL</code> 。</p>
-<h4 id="substr"><a href="#substr" class="headerlink" title="substr()"></a>substr()</h4><p>substr()、substring()功能相同，均为截取字符串</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">substr(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 子字符串的起始位置(起始值是<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">length (可选)指定要返回的子字符串的字符数, 如果省略，则返回剩余文本。</span><br></pre></td></tr></table></figure>
-
-<h4 id="mid"><a href="#mid" class="headerlink" title="mid()"></a>mid()</h4><p>mid 函数用于从文本字段中提取字符</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">mid(string, <span class="keyword">start</span>, length)</span><br><span class="line"></span><br><span class="line"><span class="keyword">start</span> 必需。规定开始位置（起始值是 <span class="number">1</span>）</span><br><span class="line"></span><br><span class="line">length（可选） 要返回的字符数, 如果省略，则 MID() 函数返回剩余文本。</span><br></pre></td></tr></table></figure>
-
-<h4 id="ASCII"><a href="#ASCII" class="headerlink" title="ASCII()"></a>ASCII()</h4><p>返回字符表达式最左侧字符的ASCII代码值</p>
-<h4 id="ord"><a href="#ord" class="headerlink" title="ord()"></a>ord()</h4><p>返回字符串第一个字符的 ASCII 值</p>
-<h4 id="updatexml"><a href="#updatexml" class="headerlink" title="updatexml()"></a>updatexml()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">updatexml(XML_document, XPath_string, new_value);</span><br><span class="line">第一个参数：XML_document 是 String 格式，为 XML 文档对象的名称，文中为 Doc</span><br><span class="line">第二个参数：XPath_string (Xpath 格式的字符串)</span><br><span class="line">第三个参数：new_value，String 格式，替换查找到的符合条件的数据</span><br></pre></td></tr></table></figure>
-
-<p>用例</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">?id<span class="operator">=</span><span class="number">1</span><span class="string">&#x27; and updatexml(1,concat(0x7e,(select database()),0x7e),1) --+  </span></span><br></pre></td></tr></table></figure>
-
-<h4 id="extractvalue"><a href="#extractvalue" class="headerlink" title="extractvalue()"></a>extractvalue()</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">extractvalue(<span class="string">&#x27;XML_document&#x27;</span>,<span class="string">&#x27;Xpath_string&#x27;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>用例</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">id<span class="operator">=</span><span class="number">-1</span><span class="string">&#x27;and extractvalue(1,concat(&#x27;</span><span class="operator">~</span><span class="string">&#x27;,(select database())))--+</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="exp"><a href="#exp" class="headerlink" title="exp()"></a>exp()</h4><p>以 e 为底数的指数函数，可能会存在溢出</p>
-<h4 id="LIKE"><a href="#LIKE" class="headerlink" title="LIKE()"></a>LIKE()</h4><p>模糊查询 %</p>
-<h4 id="group-concat"><a href="#group-concat" class="headerlink" title="group_concat()"></a>group_concat()</h4><p>将 group by 产生的同一个分组中的值连接起来，返回一个字符串结果</p>
-<h4 id="concat"><a href="#concat" class="headerlink" title="concat()"></a>concat()</h4><p>将多个字符串连接成一个字符串</p>
-<h4 id="count"><a href="#count" class="headerlink" title="count()"></a>count()</h4><h4 id="length"><a href="#length" class="headerlink" title="length()"></a>length()</h4>]]></content>
-      <categories>
-        <category>SQL注入</category>
-      </categories>
   </entry>
   <entry>
     <title>漏洞类型</title>
@@ -288,6 +195,99 @@
 ]]></content>
       <categories>
         <category>SQL注入</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>支持的协议和封装协议</title>
+    <url>/2023/06/30/PHP/%E6%94%AF%E6%8C%81%E7%9A%84%E5%8D%8F%E8%AE%AE%E5%92%8C%E5%B0%81%E8%A3%85%E5%8D%8F%E8%AE%AE/</url>
+    <content><![CDATA[<p>file:&#x2F;&#x2F; — 访问本地文件系统<br>http:&#x2F;&#x2F; — 访问 HTTP(s) 网址<br>ftp:&#x2F;&#x2F; — 访问 FTP(s) URLs<br>php:&#x2F;&#x2F; — 访问各个输入&#x2F;输出流（I&#x2F;O streams）<br>zlib:&#x2F;&#x2F; — 压缩流<br>data:&#x2F;&#x2F; — 数据（RFC 2397）<br>glob:&#x2F;&#x2F; — 查找匹配的文件路径模式<br>phar:&#x2F;&#x2F; — PHP 归档<br>ssh2:&#x2F;&#x2F; — 安全外壳协议 2<br>rar:&#x2F;&#x2F; — RAR<br>ogg:&#x2F;&#x2F; — 音频流<br>expect:&#x2F;&#x2F; — 处理交互式的流  </p>
+<p><a href="https://www.php.net/manual/zh/wrappers.php">官网文档</a></p>
+<span id="more"></span>
+<h3 id="file"><a href="#file" class="headerlink" title="file&#x2F;&#x2F;"></a>file&#x2F;&#x2F;</h3><p>用法<br>file:&#x2F;&#x2F;&#x2F;path&#x2F;to&#x2F;file.ext</p>
+<h3 id="http"><a href="#http" class="headerlink" title="http:&#x2F;&#x2F;"></a>http:&#x2F;&#x2F;</h3><p>用法<br><a href="http://example.com/">http://example.com</a></p>
+<h3 id="ftp"><a href="#ftp" class="headerlink" title="ftp:&#x2F;&#x2F;"></a>ftp:&#x2F;&#x2F;</h3><p>用法<br><a href="ftp://example.com/pub/file.txt">ftp://example.com/pub/file.txt</a></p>
+<h3 id="php"><a href="#php" class="headerlink" title="php:&#x2F;&#x2F;"></a>php:&#x2F;&#x2F;</h3><h4 id="php-input"><a href="#php-input" class="headerlink" title="php:&#x2F;&#x2F;input"></a>php:&#x2F;&#x2F;input</h4><p>php:&#x2F;&#x2F;input 是个可以访问请求的原始数据的只读流。</p>
+<h4 id="php-filter"><a href="#php-filter" class="headerlink" title="php:&#x2F;&#x2F;filter"></a>php:&#x2F;&#x2F;filter</h4><p>php:&#x2F;&#x2F;filter 是一种元封装器， 设计用于数据流打开时的筛选过滤应用。<br>示例  php:&#x2F;&#x2F;filter&#x2F;resource&#x3D;&lt;待过滤的数据流&gt;</p>
+<h3 id="phar"><a href="#phar" class="headerlink" title="phar:&#x2F;&#x2F;"></a>phar:&#x2F;&#x2F;</h3><p>数据流包装器<br><a href="https://blog.csdn.net/q20010619/article/details/120833148">PHP Phar反序列化总结</a></p>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>程序执行函数</title>
+    <url>/2023/08/05/PHP/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<p><a href="https://www.php.net/manual/zh/ref.exec.php">程序执行函数</a></p>
+<hr>
+<ul>
+<li><code>escapeshellarg</code> — 把字符串转义为可以在 shell 命令里使用的参数</li>
+<li><code>escapeshellcmd</code> — shell 元字符转义</li>
+<li><code>exec</code> — 执行一个外部程序</li>
+<li><code>passthru</code> — 执行外部程序并且显示原始输出</li>
+<li><code>proc_close</code> — 关闭由 proc_open 打开的进程并且返回进程退出码</li>
+<li><code>proc_get_status</code> — 获取由 proc_open 函数打开的进程的信息</li>
+<li><code>proc_nice</code> — 修改当前进程的优先级</li>
+<li><code>proc_open</code> — 执行一个命令，并且打开用来输入&#x2F;输出的文件指针。</li>
+<li><code>proc_terminate</code> — 杀死由 proc_open 打开的进程</li>
+<li><code>shell_exec</code>— 通过 shell 执行命令并将完整的输出以字符串的方式返回</li>
+<li><code>system</code> — 执行外部程序，并且显示输出</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>超全局变量</title>
+    <url>/2023/08/05/PHP/%E8%B6%85%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F/</url>
+    <content><![CDATA[<p>超全局变量 — 在全部作用域中始终可用的内置变量<br><a href="https://www.php.net/manual/zh/language.variables.superglobals.php">PHP: 超全局变量 - Manual</a></p>
+<hr>
+<ul>
+<li><code>$GLOBALS</code> — 引用全局作用域中可用的全部变量</li>
+<li><code>$_SERVER</code> — 服务器和执行环境信息</li>
+<li><code>$_GET</code> — HTTP GET 变量</li>
+<li><code>$_POST</code> — HTTP POST 变量</li>
+<li><code>$_FILES</code> — HTTP 文件上传变量</li>
+<li><code>$_COOKIE</code> — HTTP Cookies</li>
+<li><code>$_SESSION</code> — Session 变量</li>
+<li><code>$_REQUEST</code> — HTTP Request 变量</li>
+<li><code>$_ENV</code> — 环境变量</li>
+</ul>
+]]></content>
+      <categories>
+        <category>PHP</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>魔术方法</title>
+    <url>/2023/06/30/PHP/%E9%AD%94%E6%9C%AF%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<p>魔术方法是一种特殊的方法，当对对象执行某些操作时会覆盖 PHP 的默认操作。<br><a href="https://www.php.net/manual/zh/language.oop5.magic.php">魔术方法</a></p>
+<span id="more"></span>
+
+<h3 id="sleep-和-wakeup"><a href="#sleep-和-wakeup" class="headerlink" title="__sleep()和__wakeup()"></a>__sleep()和__wakeup()</h3><p>serialize() 函数会检查类中是否存在一个魔术方法 __sleep()。如果存在，该方法会先被调用，然后才执行序列化操作。</p>
+<p>unserialize() 会检查是否存在一个 __wakeup() 方法。如果存在，则会先调用</p>
+<h3 id="serialize-和-unserialize-构造函数和析构函数"><a href="#serialize-和-unserialize-构造函数和析构函数" class="headerlink" title="__serialize()和__unserialize() 构造函数和析构函数"></a>__serialize()和__unserialize() 构造函数和析构函数</h3><p>serialize() 函数会检查类中是否存在一个魔术方法 __serialize() 。如果存在，该方法将在任何序列化之前优先执行。</p>
+<blockquote>
+<p>注意:<br>如果类中同时定义了 __serialize() 和__sleep() 两个魔术方法，则只有 __serialize() 方法会被调用。__sleep() 方法会被忽略掉。</p>
+</blockquote>
+<p>unserialize() 检查是否存在具有名为 __unserialize() 的魔术方法。此函数将会传递从__serialize() 返回的恢复数组。然后它可以根据需要从该数组中恢复对象的属性。</p>
+<blockquote>
+<p>注意:<br>如果类中同时定义了 __unserialize() 和__wakeup() 两个魔术方法，则只有 __unserialize() 方法会生效，__wakeup() 方法会被忽略。</p>
+</blockquote>
+<h3 id="toString-NaN"><a href="#toString-NaN" class="headerlink" title="__toString()"></a>__toString()</h3><p>__toString() 方法用于一个类被当成字符串时应怎样回应。例如 echo $obj; 应该显示些什么。</p>
+<h3 id="invoke"><a href="#invoke" class="headerlink" title="__invoke()"></a>__invoke()</h3><p>当尝试以调用函数的方式调用一个对象时，__invoke() 方法会被自动调用</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="variable">$obj</span> = <span class="keyword">new</span> <span class="title class_">CallableClass</span>;</span><br><span class="line"><span class="variable">$obj</span>(<span class="number">5</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="construct-和-destruct"><a href="#construct-和-destruct" class="headerlink" title="__construct()和__destruct()"></a>__construct()和__destruct()</h3><p>PHP 允许开发者在一个类中定义一个方法作为构造函数。具有构造函数的类会在每次创建新对象时先调用此方法，所以非常适合在使用对象之前做一些初始化工作。</p>
+<p>PHP 有析构函数的概念，这类似于其它面向对象的语言，如 C++。析构函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行。</p>
+<h3 id="set-、-get-、-isset-、-unset-属性重载"><a href="#set-、-get-、-isset-、-unset-属性重载" class="headerlink" title="__set()、__get()、__isset()、__unset() 属性重载"></a>__set()、__get()、__isset()、__unset() 属性重载</h3><p>在给不可访问（protected 或 private）或不存在的属性赋值时，__set() 会被调用。</p>
+<p>读取不可访问（protected 或 private）或不存在的属性的值时，__get() 会被调用。</p>
+<p>当对不可访问（protected 或 private）或不存在的属性调用 isset() 或 empty() 时，__isset() 会被调用。</p>
+<p>当对不可访问（protected 或 private）或不存在的属性调用 unset() 时，__unset() 会被调用。</p>
+<h3 id="call-方法重载"><a href="#call-方法重载" class="headerlink" title="__call() 方法重载"></a>__call() 方法重载</h3><p>在对象中调用一个不可访问方法时，__call() 会被调用。</p>
+]]></content>
+      <categories>
+        <category>PHP</category>
       </categories>
   </entry>
 </search>
